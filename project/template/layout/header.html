@@ -1,0 +1,53 @@
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="whiter">
+				<div class="about_head_gradient"></div>
+				<div class="container">
+					<div id="lang" data-lang="{{lang}}"><a href="/{% if lang == 0 %}{{page.local}}{{extra_solution_sp_url}}{% else %}{{page.foreign}}{{extra_solution_en_url}}{% endif %}" title="Español" class="esp_{{lang}} {% if lang == 0 %} active {% endif %}">Esp</a> / <a href="/{% if lang == 1 %}{{page.local}}{{extra_solution_sp_url}}{% else %}{{page.foreign}}{{extra_solution_en_url}}{% endif %}" title="English" class="eng_{{lang}} {% if lang == 1 %}active{% endif %}">Eng</a></div>
+					<ul id="social">
+						<li class="facebook"><a href="https://www.facebook.com/FocusInvestigacion?fref=ts" title="{{gral_data.0}}" target="_blank">Facebook</a></li><li class="twitter"><a href="https://twitter.com/@focus_bc/" title="{{gral_data.1}}" target="_blank">Twitter</a></li></ul>
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-th-list"></span>
+					</a>
+					<a class="brand" href="/" alt="{{gral_data.2}}">Focus - {{gral_data.2}}</a>
+					<div id="main_nav" class="nav-collapse collapse">
+						<ul class="nav">
+							{% for row in main_menu %}
+							<li class="{{row.slug}} {% if row.slug == page.local %}active{% endif %}"><a href="/{{row.slug}}" title="{{row}}">{{row}}</a></li>
+							{% endfor %}
+							<li><a href="http://blog.focus.mx/">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{% if page.local == "nosotros" or  page.local == "about-us"  %}
+		<div id="hidden_menu" class="navbar navbar-fixed-top {{page.local}}">
+			<div class="navbar-inner">
+				<div class="whiter">
+					<div class="about_head_gradient"></div>
+					<div class="container">
+						<div id="lang_hdn"><a href="{% if lang == 0 %}{{page.local}}{% else %}{{page.foreign}}{% endif %}" title="Español" class="esp_{{lang}}">Esp</a> / <a href="{% if lang == 1 %}{{page.local}}{% else %}{{page.foreign}}{% endif %}" title="English" class="eng_{{lang}}">Eng</a></div>
+						<ul id="social_hdn">
+							<li class="facebook"><a href="https://www.facebook.com/FocusInvestigacion?fref=ts" title="{{gral_data.0}}" target="_blank">Facebook</a></li><li class="twitter"><a href="https://twitter.com/@focus_bc/" title="{{gral_data.1}}" target="_blank">Twitter</a></li></ul>
+						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-th-list"></span>
+						</a>
+						<a class="brand" href="/" alt="{{gral_data.2}}">Focus - {{gral_data.2}}</a>
+						<div id="main_nav_hdn" class="nav-collapse collapse">
+							<ul class="nav">
+								{% for row in main_menu %}
+								<li class="{{row.slug}} {% if row.slug == page.local %}active{% endif %}"><a href="/{{row.slug}}" title="{{row}}">{{row}}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+	
+	<div id="header_decor"></div>

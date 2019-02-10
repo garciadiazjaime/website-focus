@@ -1,0 +1,78 @@
+.focus-usa, .focus2-usa
+	.navbar
+		.brand
+			background: url(#{$img}focus_hispanic.png) 0 0 no-repeat
+
+	#wrapper
+		margin-top: 150px
+	color: #58595b
+
+	#intro
+		background: url('#{$img}banner_focus-usa.jpg') center no-repeat
+		background-size: cover
+		overflow: hidden
+		.head_gradient
+			display: block
+			height: 1000px
+			margin: 0 0 -1000px 0
+			@include filter-gradient(rgba(244,205,36,.5), rgba(15, 91, 186, .5), horizontal)
+			@include background-image(linear-gradient(left, rgba(244,205,36,1), rgba(15, 91, 186, .2), rgba(15, 91, 186, 1)))
+		.top_arch
+			display: block
+			background: url('#{$img}top_arch.png') no-repeat
+			background-size: 100% 100%
+			height: 131px
+			margin: 0 auto
+			width: 100%
+		.bottom_arch
+			display: block
+			background: url('#{$img}bottom_arch.png') no-repeat
+			background-size: 100% 100%
+			margin: 40px auto 0
+			height: 162px
+			width: 100%
+		h1
+			color: #fff
+			@extend %gotham
+			font-size: 42px
+				
+	
+	.yellow_title		
+		color: #f6cd1e
+		@extend %gotham
+		font-size: 31px
+		line-height: 1em
+		text-transform: uppercase
+		
+	hr
+		background: #bbbdbf
+		border: 0
+		height: 2px
+		margin: 20px 0 30px
+		
+	#about-us
+		display: block
+		margin-top: 70px
+		
+	h2
+		border-bottom: 1px solid #bbbdbf
+		color: #231f20
+		padding: 0 0 15px
+		
+#hispanic_facts
+	h2
+		background: url(#{$img}focus_usa_hispanic_icon.jpg) 0 0 no-repeat
+		border: none
+		color: #231f20
+		margin: 0 0 20px
+		padding: 100px 0 0
+		
+	ul
+		color: #808184
+		list-style-type: none
+		margin: 0
+		padding: 0
+		
+	li
+		border-bottom: 1px solid #bbbdbf
+		padding: 15px 8px

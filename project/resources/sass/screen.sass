@@ -1,0 +1,609 @@
+/* ----------- SETUP -------------- */	
+@import "compass/css3/border-radius"
+@import "compass/css3/transition"
+@import "compass/css3/font-face"
+@import "compass/css3/images"
+@import "compass/css3/box-shadow"
+@import "compass/css3/user-interface"
+@import "compass/css3/opacity"
+@import "compass/css3/transform"
+
+@import "mixins.sass"
+
+$img: "/static/images/"
+
+
+/* ****************** FONTFACE ************** */
+@font-face
+	font-family: 'GothamMedium'
+	src: url('../fonts/gotham_medium.eot')
+	src: url('../fonts/gotham_medium.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham_medium.woff') format('woff'), url('../fonts/gotham_medium.ttf') format('truetype'), url('../fonts/gotham_medium.svg#GothamMedium') format('svg')
+	font-weight: normal
+	font-style: normal
+
+
+@font-face
+	font-family: 'Open_Sans'
+	src: url('../fonts/opensans_regular.eot')
+	src: url('../fonts/opensans_regular.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_regular.woff') format('woff'), url('../fonts/opensans_regular.ttf') format('truetype'), url('../fonts/opensans_regular.svg#Open_Sans') format('svg')
+	font-weight: normal
+	font-style: normal
+	
+	
+@font-face
+	font-family: 'Open_Sans_Semibold'
+	src: url('../fonts/opensans_semibold.eot')
+	src: url('../fonts/opensans_semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_semibold.woff') format('woff'), url('../fonts/opensans_semibold.ttf') format('truetype'), url('../fonts/opensans_semibold.svg#Open_Sans_Semibold') format('svg')
+	font-weight: normal
+	font-style: normal
+	
+	
+@font-face
+	font-family: 'Open_Sans_Bold'
+	src: url('../fonts/opensans_bold.eot')
+	src: url('../fonts/opensans_bold.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_bold.woff') format('woff'), url('../fonts/opensans_bold.ttf') format('truetype'), url('../fonts/opensans_bold.svg#Open_Sans_Bold') format('svg')
+	font-weight: normal
+	font-style: normal
+
+	
+%gotham
+	font-family: 'GothamMedium', Arial, sans-serif
+	font-weight: normal
+	
+	
+%opensans
+	font-family: 'Open_Sans', Verdana, sans-serif
+	font-weight: normal
+	
+	
+%opensans_bold
+	font-family: 'Open_Sans_Bold', Arial, sans-serif
+	font-weight: normal
+	
+	
+%opensans_semibold
+	font-family: 'Open_Sans_Semibold', Verdana, sans-serif
+	font-weight: normal
+	
+	
+/* ****************** GENERAL ************** */
+
+html, body
+	background: #fff
+	color: #808184
+	@extend %opensans
+	font-size: 15px
+	letter-spacing: 0.02em
+	margin: 0
+	padding: 0
+	
+a
+	color: #808184
+	
+	&:hover, &:focus
+		text-decoration: none
+
+h1, h2, h3
+	color: #0f5bbb
+	@extend %gotham
+	font-size: 22px
+	font-weight: normal
+	line-height: 1.2em
+	
+	em
+		font-style: normal
+	
+	
+h2
+	font-size: 17px
+	text-transform: uppercase
+
+strong
+	font-weight: normal
+	@extend %opensans_bold
+
+
+.big
+	font-size: 20px
+	line-height: 1.3em
+
+.align-right
+	text-align: right
+	
+.align-left
+	text-align: left
+	
+a.green_link
+	color: #00cd88
+	font-size: 15px
+	text-decoration: none
+	
+	&:hover
+		color: lighten(#00cd88, 5)
+		text-decoration: none
+		
+.green_title
+	color: #00cd88
+	@extend %gotham
+	font-size: 40px
+	line-height: 1em
+	text-transform: uppercase
+
+.strong
+	color: #4c4c4c
+	@extend %opensans_bold	
+	
+.btn_banner
+	background-color: #00cd88
+	display: inline-block
+	font-size: 18px
+	padding: 15px 60px
+	margin: 20px 0 0 0
+  
+
+/* ****************** HEADER ************** */
+.about_head_gradient
+	display: none
+
+.navbar
+	border: none
+	margin-bottom: 0
+	a.btn-navbar
+		background: transparent url(#{$img}glyphicons-halflings.png) center 10px no-repeat
+		border: none
+		margin-right: 95px
+		margin-top: 17px
+		opacity: 1
+		@include transition(opacity 0.5s)
+		
+		&:hover
+			background-color: transparent
+			opacity: .7
+	
+		.icon-th-list
+			background: transparent
+	
+	.icon-th-list
+		background: transparent
+	
+	.container
+		padding: 30px 0 10px
+		position: relative
+		max-width: 95%
+	
+	.navbar-inner
+		background: transparent url(#{$img}header_shadow.png) center bottom no-repeat 
+		@include box-shadow(none)
+		border: none
+		padding: 0 0 14px
+		.whiter
+			background: #FFF
+		
+	.brand
+		background: url(#{$img}focus_logo.png) 0 0  no-repeat
+		height: 60px
+		line-height: 50000em
+		margin: 0
+		overflow: hidden
+		padding: 0
+		width: 240px
+	
+	.nav	
+		@extend %opensans_semibold
+		font-size: 12px
+		float: right
+		margin: 0 160px 0 0
+		padding-top: 15px
+		text-transform: uppercase
+		
+		a
+			background: transparent
+			
+			&:hover
+				@include box-shadow(none)
+			
+		.active	
+			a
+				background: transparent
+				color: #000
+				@include box-shadow(none)
+
+				&:hover
+					background: transparent
+					@include box-shadow(none)
+					
+.home, .solutions, .contact
+	.brand
+		background-image: url(#{$img}focus_logo_ingles.jpg)
+			
+#lang, #lang_hdn
+	color: #414042
+	font-size: 10px
+	position: absolute
+	right: 10px
+	top: 20px
+	
+	a
+		color: #414042
+		text-transform: uppercase
+		
+		&:hover
+			color: lighten(#414042, 30)
+			text-decoration: none
+	.active
+		text-decoration: underline
+			
+#social, .social, #social_hdn
+	display: inline-block
+	position: absolute
+	right: 10px
+	top: 55px
+	
+	li
+		display: inline-block
+		height: 24px
+		margin: 0
+		overflow: hidden
+		vertical-align: top
+		width: 25px
+		
+		a
+			background: url(#{$img}sprite_social.png) 0 0 no-repeat
+			display: block
+			height: 100%
+			line-height: 5000em
+			width: 100%
+			
+			&:hover
+				background-position: 0 -57px
+					
+					
+	.twitter
+		margin: 0 0 0 18px
+	
+		a
+			background-position: -43px 0
+			
+			&:hover
+				background-position: -43px -57px
+				
+
+#hidden_menu
+	@include transition(opacity 0.5s)
+	
+	.whiter
+		background: white
+
+	.brand
+		background-image: url(#{$img}focus_logo.png)
+				
+/* ****************** FOOTER ************** */	
+footer
+	background:  url(#{$img}footer_decor.png) center top no-repeat
+	background-size: 100% 57px
+	color: #fff
+	@extend %opensans
+	font-size: 12px
+	margin: 80px 0 0
+	padding: 57px 0 0
+	
+	nav
+		li.soluciones, li.solutions
+			margin-left: 1%
+			width: 41.5%
+	
+	a
+		color: #fff
+		font-size: 12px
+	
+		&:hover
+			color: darken(#fff, 5)
+			text-decoration: none
+	
+	
+	h5		
+		@extend %opensans_bold
+		font-size: 12px
+		font-weight: normal
+		margin-top: 0
+	
+	.container
+		padding: 40px 0 0		
+
+	#botom_nav	
+		margin: 20px 0 70px
+		overflow: hidden
+		text-transform: uppercase
+		
+		a
+			color: #58595B
+			@extend %opensans_bold
+		
+			&:hover
+				color: lighten(#58595B, 10)
+		
+		h5
+			a
+				font-size: 11px
+			
+		div.cobertura, div.coverage
+			float: left
+			text-align: left
+			width: 36.4%
+
+		div
+			display: inline-block
+			margin: 10px 0 0
+			vertical-align: top
+			width: 50%
+		
+	.wrapper
+		background: #00cd88
+	
+	nav
+		border-top: 1px solid #006d44
+		padding: 30px 0 0
+		
+		li
+			a
+				color: #58595b
+				@extend %opensans_bold
+				font-size: 11px
+				text-transform: uppercase
+				
+				&:hover
+					color: lighten(#58595b, 10)
+		
+		ul
+			margin-top: -60px
+	
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		
+		ul
+			li
+				display: block
+				margin-left: 0
+
+	li
+		display: inline-block
+		margin-left: 2.2%
+		vertical-align: top
+	
+		a
+			color: #fff
+		
+			&:hover
+				color: darken(#fff, 5)
+				text-decoration: none		
+				
+			em
+				display: block
+				@extend %opensans_bold
+				font-style: normal
+				margin: 15px 0 0
+				
+		
+				
+	li.contacto, li.contact		
+		margin-left: 0
+		width: 22%
+		
+	li.nosotros, li.about-us
+		width: 11%
+	
+	li.soluciones, li.solutions		
+		width: 43%
+		
+		div
+			display: inline-block
+			margin: 0 0 0 1.5%
+			vertical-align: top
+			width: 51%
+			
+		div.first
+			margin: 0
+			width: 47%
+			
+	
+	li.productos, li.products	
+		width: 12%
+		
+	li.productos.extra_margin, li.li.products.extra_margin
+		margin-left: 1%
+		width: 18%
+		
+		h5
+			margin-top: 10px
+			
+
+	.mobile
+		h4
+			@extend %opensans_bold
+			font-size: 9px
+			margin: 1px 0 0
+			
+		h3
+			border: none
+			color: #fff
+			@extend %opensans_bold
+			font-size: 16px
+			margin: 25px 0
+			text-align: left
+			text-transform: uppercase
+			
+		h5
+			color: #fff
+			@extend %opensans_bold
+			font-size: 10px
+			
+	
+		.tj.half
+			background: #f5f5f5
+
+		.half
+			.phone, .mail
+				opacity: 1
+				@include transition(opacity 0.5s)
+				
+				&:hover
+					cursor: pointer
+					opacity: .7
+			
+			.phone
+				margin: 15px 10px 15px 20px
+				vertical-align: top
+				
+				a
+					display: block
+					height: 100%
+					line-height: 50000em
+					overflow: hidden
+				
+			.mail	
+				margin: 15px 0 15px 20px
+				vertical-align: top
+				
+				a
+					display: block
+					height: 100%
+			
+	.white
+		background: #fff
+	
+	.phone, .mail
+		background: url(#{$img}green_icons.jpg) 0 0 no-repeat
+		display: inline-block
+		height: 35px
+		width: 36px
+		
+	.mail
+		background-position: 0 -35px
+
+.half
+	display: inline-block
+	vertical-align: top
+	width: 49%
+
+.half.first
+	margin-right: 2%
+
+#developed_mobile
+	font-size: 8px
+	text-align: left
+	
+	a
+		color: #fff
+		
+		&:hover
+			color: darken(#fff, 5)
+	 
+	p
+		background: url(#{$img}engrane.png) 0 4px no-repeat 
+		display: inline-block
+		margin: 0
+		padding: 1px 0 3px 23px
+		
+		span
+			display: inline-block
+			margin: 0 0 0 30px
+	
+#creditos
+	background: #58595b
+	color: #fff
+	font-size: 11px
+	padding: 25px 0
+	
+	.container
+		padding: 0
+	
+#copy, #developed
+	display: inline-block
+	vertical-align: top
+	width: 50%
+	
+#developed
+	text-align: right
+	text-transform: uppercase
+	
+	a
+		font-size: 12px
+	
+
+/* **************** LAYOUT **************** */
+.container
+	max-width: 93%
+		
+.bullet_slider
+	min-height: 255px
+	position: relative
+	
+	img
+		display: none
+	
+	img.active
+		display: inline-block
+		
+.bullets
+	position: relative
+	top: -55px
+	z-index: 5
+	
+
+	a
+		background: transparent
+		@include border-radius(5px)
+		border: 1px solid #00cd88
+		display: inline-block
+		height: 10px
+		line-height: 5000em
+		margin-left: 10px 
+		overflow: hidden
+		width: 10px
+		
+		&:hover
+			background: #00cd88
+		
+	a.activeSlide
+		background: #00cd88
+
+
+		
+#intro
+	margin: 0 0
+	text-align: center
+	
+	h1
+		color: #fff
+		@extend %opensans_semibold
+		font-size: 13px
+		text-align: center
+
+	em
+		display: block
+		color: #fff
+		display: block
+		@extend %gotham
+		font-size: 42px
+		font-style: normal
+		line-height: 1em
+		padding: 0 0 15px
+	
+	a
+		color: #fff
+		opacity: 1
+		@include transition(opacity 0.5s)
+		
+		&:hover
+			opacity: .8
+			text-decoration: none
+		
+@import "sections/about.sass"
+@import "sections/solutions.sass"
+@import "sections/contact.sass"
+@import "sections/focus-usa.sass"
+@import "sections/home.sass"
+
+@import "responsive.sass"

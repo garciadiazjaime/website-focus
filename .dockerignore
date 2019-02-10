@@ -1,0 +1,9 @@
+.git
+.openshift
+.sass-cache
+bower_components
+docs
+node_modules
+npm-debug.log
+focus
+.vscode/

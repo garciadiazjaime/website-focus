@@ -1,0 +1,417 @@
+.logo-berumen {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px 0px !important;
+}
+.focus-logo-amai {
+  height: 85px !important;
+  width: 133px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -132px !important;
+}
+.logo-4s {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -267px !important;
+}
+.logo-bgc {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -399px !important;
+}
+.logo-gdv {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -531px !important;
+}
+.logo-agrobaja {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -663px !important;
+}
+.logo-ayuntamiento {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -795px !important;
+}
+.logo-bigfoot {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -927px !important;
+}
+.logo-blue {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -1059px !important;
+}
+.logo-calimax {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -1191px !important;
+}
+.logo-dinamia {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -1323px !important;
+}
+.logo-dinamo {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -1455px !important;
+}
+.logo-elinsituto {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -1587px !important;
+}
+.logo-elinstituto {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -1719px !important;
+}
+.logo-epi {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -1851px !important;
+}
+.logo-ga {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -1983px !important;
+}
+.logo-gasmart {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -2115px !important;
+}
+.logo-gfk {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -2247px !important;
+}
+.logo-identa {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -2379px !important;
+}
+.logo-inmersa {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -2511px !important;
+}
+.logo-insitum {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -2643px !important;
+}
+.logo-integraciontotal {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -2775px !important;
+}
+.logo-intex {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -2907px !important;
+}
+.logo-ipsos {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -3039px !important;
+}
+.logo-iq {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -3171px !important;
+}
+.logo-jd {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -3303px !important;
+}
+.logo-kp {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -3435px !important;
+}
+.logo-lamarcalab {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -3567px !important;
+}
+.logo-lexia {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -3699px !important;
+}
+.logo-loginam {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -3831px !important;
+}
+.logo-makro {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -3963px !important;
+}
+.logo-mandarina {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -4095px !important;
+}
+.logo-mb {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -4227px !important;
+}
+.logo-mda {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -4359px !important;
+}
+.logo-nodo {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -4491px !important;
+}
+.logo-nr {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -4623px !important;
+}
+.logo-pan {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -4755px !important;
+}
+.logo-parametria {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -4887px !important;
+}
+.logo-person {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -5019px !important;
+}
+.logo-phenoma {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -5151px !important;
+}
+.logo-promoteca {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -5283px !important;
+}
+.logo-qsolutions {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -5415px !important;
+}
+.logo-re {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -5547px !important;
+}
+.logo-roma {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -5679px !important;
+}
+.logo-serta {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -5811px !important;
+}
+.logo-sigmados {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -5943px !important;
+}
+.logo-simple {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -6075px !important;
+}
+.logo-soriana {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -6207px !important;
+}
+.logo-ss {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -6339px !important;
+}
+.logo-tag {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -6471px !important;
+}
+.logo-teriyaki {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -6603px !important;
+}
+.logo-ti {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -6735px !important;
+}
+.logo-tlacuache {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -6867px !important;
+}
+.logo-tns {
+  height: 82px !important;
+  width: 153px !important;
+  background-image: url("/static/images/v2/empresas-sprite.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0px -6999px !important;
+}
+#slider_conocenos li {
+  height: 400px !important;
+}
+#slider_conocenos_wrapp #know-about-us-phrase {
+  padding: 220px 0 0 !important;
+}
+.cbp-fwprev,
+.cbp-fwnext {
+  top: 300px !important;
+}
+#infraestructure_elements #in_location .infraestructure_img {
+  background: url(/static/images/Focus-Instalaciones-Circulo.jpg) center 0 no-repeat !important;
+}
+#infraestructure_elements #in_gesell .infraestructure_img {
+  background: url(/static/images/Focus-CamaraGesell-Circulo.jpg) center 0 no-repeat !important;
+}
+#bullet_nav.bullets {
+  z-index: 20 !important;
+  top: -20px !important;
+}
+#solutions_main_wrapp #services_content #service_title i {
+  background: url(/static/images/previa_icon.png) left 0 no-repeat !important;
+  margin: 0 0 0 5px !important;
+  padding: 9px 0 10px 37px !important;
+  width: 32px !important;
+  height: 32px !important;
+  display: inline-block !important;
+  position: relative !important;
+  left: 20px !important;
+  top: 25px !important;
+}
+#slider_conocenos_wrapp #know-about-us-phrase {
+  left: 65% !important;
+}
+
+#form_response {
+  text-align: right;
+  padding-top: 12px;
+}

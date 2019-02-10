@@ -1,0 +1,39 @@
+{% extends 'layout/base.html' %}
+{% block site_wrapper %}
+	{% load staticfiles %}{% autoescape off %}
+	<div id="intro" class="first_block">
+		<span class="head_gradient"></span>
+		<span class="top_arch"></span>
+		<div class="container">
+			<h1>{{data.0}}</h1>
+		</div>
+		<span class="bottom_arch"></span>
+	</div>
+	<div class="container">
+		<div class="row-fluid">
+	    	<div class="span5">
+				<p class="yellow_title mobile">{{data.1}}</p>
+				<p class="strong">{{data.2}}</p></div>
+	    	<div class="span5 offset1"><p class="yellow_title">{{data.1}}</p></div>
+	    </div>
+		<hr />
+		<div class="row-fluid">
+			<div class="span5">
+				<span id="about-us"></span><span id="acerca"></span>
+				<h2>{{data.3}}</h2>
+				{{data.4}}
+				
+			</div>
+			<div class="span5 offset1">
+				<div  id="hispanic_facts">
+					<h2>{{data.5}}</h2>
+					<ul>
+						{{data.6}}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+{% endautoescape %}	
+{% endblock %}

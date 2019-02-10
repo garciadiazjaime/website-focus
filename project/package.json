@@ -1,0 +1,20 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sprite": "npm run less-sprite && npm run less-set-classes && npm run less-css",
+    "less-sprite": "less-sprites resources/less/sprite-empresas.json",
+    "less-set-classes": "node ../src/scripts/extract-css-class/index.js",
+    "less-css": "lessc resources/less/main.less static/css/v2/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^2.7.1",
+    "less-sprites": "^0.2.1"
+  }
+}

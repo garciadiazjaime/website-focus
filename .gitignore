@@ -1,0 +1,14 @@
+*.py[co]
+*.sw[po]
+*.bak
+*.orig
+*~
+.project
+.pydevproject
+*.DS_Store
+.sass-cache/
+node_modules
+npm-debug.log
+secrets.txt
+focus
+.vscode/

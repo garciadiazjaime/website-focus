@@ -1,0 +1,10 @@
+{
+  "direction": "bottom",
+  "dir": "../images/empresas",
+  "files": ["*"],
+  "sprite": "../../static/images/v2/empresas-sprite.png",
+  "httpPath": "/static/images/v2",
+  "spacing": 50,
+  "retina": false,
+  "less": "sprites/empresas-sprite.less"
+}

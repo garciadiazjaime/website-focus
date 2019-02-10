@@ -1,0 +1,117 @@
+{% autoescape off %}
+<div class="wrapper">
+	<div class="container">
+		<nav>
+			<ul>
+				{% for row in footer_menu %}
+				<li class="{{row.slug}}"><a href="/{{row.slug}}" title="{{row}}">{{row}}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+		<ul>
+			<li class="contacto">
+				<h5>{{gral_data.3}}</h5>
+				<p>{{gral_data.4}}</p>
+
+				<p>{{gral_data.5}}</p>
+
+			</li><li class="nosotros">
+				<h5>{{gral_data.7}}</h5>
+				<ul>
+					<li>{{gral_data.8}}</li>
+					<li>{{gral_data.9}}</li>
+					<li>{{gral_data.10}}</li>
+					<li>{{gral_data.11}}</li>
+				</ul>
+			</li><li class="soluciones">
+				<div class="first">
+					<h5>{{gral_data.12}}</h5>
+					<ul>
+						<li>{{gral_data.13}}</li>
+						<li>{{gral_data.14}}</li>
+						<li>{{gral_data.15}}</li>
+						<li>{{gral_data.16}}</li>
+						<li>{{gral_data.17}}</li>
+						<li>{{gral_data.18}}</li>
+						<li>{{gral_data.19}}</li>
+						<li>{{gral_data.20}}</li>
+						<li>{{gral_data.21}}</li>
+					</ul>
+				</div><div>
+					<h5>{{gral_data.22}}</h5>
+					<ul>
+						<li>{{gral_data.23}}</li>
+						<li>{{gral_data.24}}</li>
+						<li>{{gral_data.25}}</li>
+						<li>{{gral_data.26}}</li>
+					</ul>
+
+
+					{{gral_data.27}}
+					<ul>
+						<li>{{gral_data.28}}</li>
+						<li>{{gral_data.29}}</li>
+						<li>{{gral_data.30}}</li>
+					</ul>
+				</div>
+			</li><li class="productos extra_margin">
+
+				<ul>
+					<li>{{gral_data.31}}</li>
+					<li>{{gral_data.32}}</li>
+					<li>{{gral_data.33}}</li>
+				</ul>
+
+					<h5>{{gral_data.34}}</h5>
+			</li>
+		</ul>
+		<div id="botom_nav">
+			<!--<div class="cobertura"><h5>{{gral_data.35}}</h5></div>-->
+			<div class="hispanic-market-research">
+				<h5>
+					{{gral_data.36}}
+					<br />
+					<a href="/aviso-privacidad">Aviso de Privacidad</a>
+				</h5>
+			</div>
+		</div>
+		<div class=" mobile">
+			<div class="half first">
+				<h4>Focus Investigación de Mercados</h4>
+				<h3>Contáctanos</h3>
+			</div><div class="half">
+				<ul class="social">
+					<li class="facebook"><a href="https://www.facebook.com/FocusInvestigacion?fref=ts" title="{{gral_data.0}}" target="_blank">Facebook</a></li><li class="twitter"><a href="https://twitter.com/@focus_bc/" title="{{gral_data.1}}" target="_blank">Twitter</a></li>
+				</ul>
+			</div>
+
+			<div class="half first">
+				<h5>Tijuana</h5>
+			</div><div class="half">
+				<h5>Mexicali</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile white">
+		<div class="tj half first">
+			<span class="phone tj"><a href="tel:6646342930">6646342930</a></span><span class="mail tj"><a href="mailto:contactotij@focus.com.mx" title=""></a></span>
+		</div><div class="half">
+			<span class="phone mx"><a href="tel:6865543347">6865543347</a></span><span class="mail mx"><a href="" title="mailto:info@focus.com.mx"></a></span>
+		</div>
+	</div>
+	<div id="creditos">
+		<div class="container">
+			<div id="copy">
+				{{gral_data.37}}     © {{year}}
+			</div><div id="developed">
+				Powered by:  <a href="http://www.thinkcorporativo.com" title="Think Corporativo" target="_blank">Think</a> / <a href="http://www.mintitmedia.com" title="Mint IT Media" target="_blank">Mint</a>
+			</div>
+			<div id="developed_mobile" class="mobile">
+				<p>Un proyecto de: <a href="http://www.thinkcorporativo.com" title="THINK Corporativo">THINK corporativo</a>      <span>Código por: <a href="http://www.mintitmedia.com" title="Mint IT Media">Mint IT Media</a></span></p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endautoescape %}

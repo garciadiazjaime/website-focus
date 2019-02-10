@@ -1,0 +1,620 @@
+.mobile
+	display: none
+	position: relative
+	
+@media screen and (max-width: 767px)	
+	#survey
+		display: none
+
+	#coverage_map
+		margin: 0 0 -140px
+		max-width: 100%
+		
+		.container
+			position: static
+			left: auto
+
+@media screen and (max-width: 979px)
+
+	/* ---- GENERAL  ---- */
+
+	#wrapper
+		#intro
+			height: 160px
+			margin: 0 0 40px
+
+			.head_gradient
+				height: 100%
+				margin: 0 0 -130px
+
+			.top_arch, .bottom_arch
+				display: none
+	
+	#hidden_menu
+		display: none
+	
+	#header	
+		#social	
+			display: none
+			
+	.navbar
+		a.btn-navbar
+			margin-right: 5px
+
+	footer
+		background: transparent
+		padding: 0
+		
+		.wrapper
+			padding: 20px 0 0
+			
+		li
+			margin-left: 0
+	
+	.soluciones, .solutions, .focus-usa, .focus2-usa
+		#wrapper
+			margin: 0
+		
+		#solutions_slider
+			.cbp-fwprev, .cbp-fwnext
+				top: 70px
+
+	.inicio, .home
+		#wrapper
+			margin-top: 0
+			
+			#intro
+				height: 310px
+				margin-top: 0
+				
+				h1
+					font-size: 30px
+					margin: 0
+					padding: 20px 0 0
+					
+					em
+						font-size: 30px
+				
+				h2
+					margin: 0
+					padding: 5px 0 0
+				
+				h3
+					margin: 0
+					padding: 5px 0 0
+					
+				.head_gradient
+					margin: 0 0 -290px
+					
+				p
+					font-size: 14px
+					margin: 10px auto 10px
+					
+				a
+					margin: 0
+	
+	.soluciones, .solutions
+		#solutions_slider
+			ul
+				height: 160px
+			
+			li
+				height: 100%
+		
+	.focus-usa, .focus2-usa
+		.yellow_title
+			display: block
+			font-size: 25px
+			
+		.yellow_title.mobile
+			display: none
+		
+		#wrapper
+			#intro
+				h1
+					font-size: 30px
+					margin: 0
+	
+	.about-us, .nosotros
+		#wrapper
+			#intro
+				height: 280px
+				margin: 0 0 40px	
+				
+				.head_gradient
+					margin: 0 0 -310px
+					
+	
+	/* ---- About us  ---- */
+	
+
+	#personnel
+		#dayan
+			margin: 0 0 50px
+
+	.about-us, .nosotros
+		#main_nav
+			.nav
+				li
+					background: #fff
+					color: black
+			
+					a
+						color: black
+
+						&:hover
+							color: darken(#fff, 40)
+		
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top
+		margin-left: 0
+		margin-right: 0
+	
+	#main_nav
+		.nav
+			margin: 0
+			width: 100%
+
+			a
+				@extend %opensans
+				font-size: 15px
+				font-weight: normal
+				border-top: 1px solid #c1c1c1
+				@include border-radius(0)
+
+				&:hover
+					background: transparent
+
+			li.inicio
+				a
+					border-top: none
+
+	footer
+
+		.social
+			position: static
+
+		ul
+			display: none
+			
+		nav
+			border-top: none
+			
+			ul
+				display: block
+				
+				a
+					border-bottom: 1px solid #006d44
+					display: block
+					padding: 0 0 7px
+			
+			li.contacto, li.soluciones, li.contact, li.solutions
+				margin: 0 2% 10px 0
+				width: 48%
+			
+			li.nosotros, li.productos, li.about-us, li.products
+				margin: 0
+				width: 48%
+			
+			li.soluciones/productos-focus/previa, li.soluciones/productos-focus/previa-software
+				margin: 0
+				width: 48% 
+	
+		#botom_nav 
+			margin: 0 0 70px
+			
+			div
+				
+				a
+					border-bottom: 1px solid #006d44
+					display: block
+					padding: 0 0 7px
+			
+			div.cobertura, div.coverage
+				margin: 0 2% 10px 0
+				width: 48%
+				
+			div.hispanic-market-research
+				margin: 0
+				width: 48%
+				
+	#copy
+		font-size: 10px
+		text-align: left
+		width: 100%
+	
+	#developed
+		display: none
+		
+	.mobile
+		display: block
+
+	.nosotros, .about-us, .soluciones, .solutions, .focus-usa, .focus2-usa
+		h1
+			font-size:  22px
+			
+		h3
+			font-size: 15px
+		
+		#intro
+			p, h1
+				font-size: 11px
+		
+				em
+					font-size: 27px
+
+	/* ---- Nosotros ---- */
+
+
+	.nosotros, .about-us
+		h1, h2
+			text-align: center
+	
+		.big
+			font-size: 15px
+			
+		h2
+			border-bottom: 1px solid #bbbdbf
+			font-size: 22px
+			margin: 10px 0 20px
+			padding: 0 0 10px
+			
+		h2.gray
+			display: none
+			
+	#personnel
+
+		.personnel_picture
+			width: 30%
+
+		.personnel_info
+			width: 66%
+
+	#clients_list_logos, #agencies_list_logos
+		margin: 0 0 60px auto
+		
+	
+	#slider_conocenos
+		li
+			font-size: 21px
+			
+	#reasons_accordeon
+		ul
+			font-size: 20px
+			
+		h3
+			font-size: 15px
+			text-align: left
+			
+	#infraestructure_elements
+		margin-top: 50px
+			
+		.span3
+			margin-bottom: 30px
+			
+	#experience_title
+		font-size: 22px
+		
+	#clients_agencies
+		margin: 41px 0 15px auto
+		text-align: center
+	
+	#info_block, #infraestructure_elements, #experiencia
+		text-align: center
+		
+	/* ---- SOLUTIONS ---- */
+	#solutions_block
+		text-align: center
+		
+	#listado_soluciones, #bloque_servicios
+		width: 100%
+		
+	#listado_soluciones 
+		border-width: 2px 0 0
+		display: block
+		margin: 50px auto 0
+		padding: 40px 0 0
+		width: 80%
+		
+		p
+			border: none
+			border-right: 10px solid #e5e6e7
+			margin: 0 0 2px
+			
+			&:hover, &:focus
+				border-color: #00cd88
+		ul
+			li
+				border: none
+				border-right: 10px solid #e5e6e7
+				margin: 0 0 2px
+				
+				&:hover, &:focus
+					border-color: #00cd88
+					
+			
+			a
+				border-bottom: 1px solid #e5e6e7
+				margin: 0 10px 0 0
+				
+			
+		h2
+			a
+				background: url(#{$img}icons/estudios-mercado.jpg) 0 0 no-repeat
+				padding: 5px 0 10px 60px
+				
+		#sondeos
+			h2
+				a
+					background: url(#{$img}icons/sondeos.jpg) 0 0 no-repeat
+
+		#asesoria
+			h2
+				a
+					background: url(#{$img}icons/asesoria.jpg) 0 0 no-repeat
+
+		#hispanic
+			h2
+				a
+					background: url(#{$img}icons/hispanic.jpg) 0 0 no-repeat
+
+		#logistica
+			h2
+				a
+					background: url(#{$img}icons/logistica.jpg) 0 0 no-repeat
+
+		#productos
+			h2
+				a
+					background: url(#{$img}icons/focus.jpg) 0 0 no-repeat
+	
+	#next				
+		display: none
+	
+	#next_mobile
+		display: block
+		margin: -50px 0 0 auto
+		
+	#services_content	
+		h2
+			padding: 10px 50px 10px 0
+		
+	#services_content.estudios-de-mercado	
+		h2
+			background: url(#{$img}icons/estudios-mercado.jpg) right 0 no-repeat
+
+	#services_content.sondeos-opinion-publica		
+		h2
+			background: url(#{$img}icons/sondeos.jpg) right 0 no-repeat
+
+	#services_content.asesoria-mercadotecnia
+		h2
+			background: url(#{$img}icons/asesoria.jpg) right 0 no-repeat
+
+	#services_content.hispanic-market-research
+		h2
+			background: url(#{$img}icons/hispanic.jpg) right 0 no-repeat
+
+	#services_content.apoyo-logistico-campo
+		h2
+			background: url(#{$img}icons/logistica.jpg) right 0 no-repeat
+
+	#services_content.productos-focus
+		h2
+			background: url(#{$img}icons/focus.jpg) right 0 no-repeat
+	
+	#services_list, #services_header
+		display: none
+		
+	/* *************** home **************** */
+	
+	
+	.inicio, .home
+		#listado_soluciones
+			h2
+				a
+					background-position: center 0
+					padding: 50px 0 0
+
+			#sondeos
+				h2
+					a
+						background-position: center 0
+
+			#asesoria
+				h2
+					a
+						background-position: center 0
+
+			#hispanic
+				h2
+					a
+						background-position: center 0 
+
+			#logistica
+				h2
+					a
+						background-position: center 0 
+
+			#productos
+				h2
+					a
+						background-position: center 0
+	
+	/* ************* Contact ************** */
+	.contact, .contacto
+		#wrapper
+			margin-top: 40px
+	
+@media screen and (min-width: 1171px)
+	.container
+		max-width: 1170px 
+		
+	.navbar 
+		.container	
+			max-width: 1170px
+			
+	
+@media screen and (max-width: 800px)
+	.inicio
+		#intro
+			.top_arch
+				height: 50px
+			.bottom_arch
+				height: 65px
+
+
+@media screen and (max-width: 767px)
+	.inicio, .home
+		#cobertura
+			background-position: -150px top
+			
+			p
+				padding: 0 0 0 40%
+
+				
+
+@media screen and (max-width: 580px)
+	.inicio, .home
+		#cobertura
+			background-position: -150px top
+				
+
+@media screen and (max-width: 500px)
+	.inicio, .home
+		#cobertura
+			padding: 70px 0 0
+
+			p
+				padding: 170px 30px 80px
+
+@media screen and (max-width: 300px)
+	.inicio, .home
+		#cobertura
+			background-position: -260px top
+
+				
+@media screen and (min-width: 768px) and (max-width: 1285px)
+	.inicio, .home 
+		#survey 
+			#survey_response 
+				.azul, .verde
+					width: 255px
+					
+	
+					
+				
+/* ********************** Layount *************************** */
+
+
+
+@media screen and (min-width: 1px) and (max-width: 390px) 
+
+
+	/* ---- GENERAL  ---- */		
+	.inicio, .home
+		#wrapper
+
+			#intro
+				height: 340px
+
+				.head_gradient
+					margin: 0 0 -340px
+					
+
+	#focus-vision
+		margin: 30px 0 60px
+		
+@media screen and (min-width: 1px)  and (max-width: 767px)		
+	
+	
+	.focus-usa, .focus2-usa
+		.yellow_title
+			display: none
+			
+		.yellow_title.mobile
+			display: block
+			
+		#about-us
+			margin-top: 50px
+	
+	#hispanic_facts
+		margin-top: 50px
+	/* *************** home **************** */
+	
+	
+	.inicio, .home
+		#listado_soluciones
+			
+			h2
+				margin: 0 0 15px
+				padding: 0
+				text-align: left
+				
+				a
+					background-position: left 0
+					padding: 9px 0 11px 60px
+
+			#sondeos
+				h2
+					a
+						background-position: left 0
+
+			#asesoria
+				h2
+					a
+						background-position: left 0
+
+			#hispanic
+				h2
+					a
+						background-position: left 0 
+
+			#logistica
+				h2
+					a
+						background-position: left 0 
+
+			#productos
+				h2
+					a
+						background-position: left 0
+						
+			span
+				display: inline-block
+	
+	/* ************ MAP ************** */
+	#cobertura, #coverage_map
+		.span2
+			display: inline-block
+			vertical-align: top
+			width: 28%
+		.offset8
+			margin: 0 0 0 35%
+			
+			
+	/* ************ Contact ************** */		
+	#map_mx_title
+		margin:  0
+		
+	.contact, .contacto
+		h2.big
+			font-size: 33px
+			line-height: 1em
+		
+@media screen and (min-width: 1px)  and (max-width: 320px)
+	.green_title
+		font-size: 30px
+		margin: 50px 0 0 
+		
+	#services_content
+		h2
+			font-size: 17px
+			padding: 10px 50px 18px 0
+
+	/* ************ MAP ************** */
+	#cobertura, #coverage_map
+		.span2
+			width: 48%
+
+		.offset8
+			margin: 0

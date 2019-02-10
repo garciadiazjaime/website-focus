@@ -1,0 +1,116 @@
+{% extends 'layout/base.html' %} {% block site_wrapper %}{% autoescape off %}
+<!-- Banner -->
+<div id="intro" class="first_block">
+	<span class="head_gradient"></span>
+	<span class="top_arch"></span>
+	<div class="container">
+		<h1><em>{{data.0}}</em></h1>
+		<h2>{{data.1}}</h2>
+		<p>{{data.2}}</p>
+		<a href="contacto">
+				{{data.3}}
+			</a>
+	</div>
+	<span class="bottom_arch"></span>
+</div>
+
+<!-- Twitter -->
+
+<!-- Nuestras Soluciones -->
+<div class="container">
+	<div id="twitter_feed">
+	</div>
+
+	<h2>{{data.4}}</h2>
+
+	<div id="solutions_main_wrapp">
+		<div id="listado_soluciones" class="active">
+			<div class="row-fluid">
+				<div class="span4">
+					<h2 class="grow">
+							{{data.5}}
+						</h2>
+				</div>
+				<div id="sondeos" class="span4">
+					<h2 class="grow">
+							{{data.6}}
+						</h2>
+				</div>
+				<div id="asesoria" class="span4">
+					<h2 class="grow">
+							{{data.7}}
+						</h2>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div id="hispanic" class="span4">
+					<h2 class="grow">
+							{{data.8}}
+						</h2>
+				</div>
+				<div id="logistica" class="span4">
+					<h2 class="grow">
+							{{data.9}}
+
+						</h2>
+				</div>
+				<div id="productos" class="span4">
+					<h2 class="grow">
+							{{data.10}}
+						</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h3>{{data.11}}</h3>
+		</div>
+	</div>
+</div>
+<!-- Survey -->
+
+<div id="survey">
+	<div id="survey_blue"></div>
+	<div class="survey_blue_bkg"></div>
+	<div id="survey_green" style="width: 50%;">
+		<div class="survey_green_bkg"></div>
+	</div>
+	<div id="survey_question">
+		<b>{{question.text}}</b>
+		<ul>
+			{% for row in answer %} {% if forloop.counter|divisibleby:2 %}
+			<li><a href="{{row.value}}" title="{{row.value}}" rel="{{row.id}}" class="right" data-opt="response_b">›</a></li>
+			{% else %}
+			<li><a href="{{row.value}}" title="{{row.value}}" rel="{{row.id}}" data-opt="response_a">‹</a></li>
+			{% endif %} {% endfor %}
+		</ul>
+	</div>
+	<div id="survey_response" class=""></div>
+</div>
+
+<!-- Cobertura -->
+
+<div class="container">
+	<h4>{{data.12}}</h4>
+</div>
+<div id="cobertura">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span5 offset7">
+				<p>
+					{{data.17}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="splash_amai" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<img src="/static/images/home/splash-amai-01.png" title="splash amai" data-dismiss="modal" aria-label="Close" />
+			</div>
+		</div>
+	</div>
+</div>
+{% endautoescape %} {% endblock %}

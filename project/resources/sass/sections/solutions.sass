@@ -1,0 +1,274 @@
+.soluciones, .solutions
+	.bullets
+		text-align: center
+
+	#bullet_nav
+		max-width: 523px
+	
+	#wrapper
+		margin-top: 150px
+	#intro
+		background: url('#{$img}banner_solutions.jpg') no-repeat
+		background-size: cover
+		overflow: hidden
+		.head_gradient
+			display: block
+			height: 1000px
+			margin: 0 0 -1000px 0
+			@include filter-gradient(rgba(1,196,139,.5), rgba(15, 91, 186, .5), horizontal)
+			@include background-image(linear-gradient(left, rgba(1,196,139,1), rgba(15, 91, 186, .2), rgba(15, 91, 186, 1)))
+		.top_arch
+			display: block
+			background: url('#{$img}top_arch.png') no-repeat
+			background-size: 100% 100%
+			height: 131px
+			margin: 0 auto
+			width: 100%
+		.bottom_arch
+			display: block
+			background: url('#{$img}bottom_arch.png') no-repeat
+			background-size: 100% 100%
+			margin: 40px auto 0
+			height: 167px
+			width: 100%
+
+#listado_soluciones
+	border-top: 1px solid #bbbdbf
+	margin: 30px 0 0
+	padding: 60px 0 0
+	
+	.row
+		margin-bottom: 70px
+
+	h2
+		a
+			background: url(#{$img}services_sprite.png) left 0 no-repeat		
+			color: #231f20
+			display: block
+			@extend %gotham
+			font-size: 17px
+			padding: 140px 0 0 5px
+			text-transform: uppercase
+			
+			&:hover
+				color: lighten(#231f20, 30) 
+				text-decoration: none
+	
+	ul
+		list-style-type: none
+		margin: 10px 0 55px
+		padding: 0
+		
+		li
+			border-bottom: 1px solid #bbbdbf
+			@extend %opensans_semibold
+			margin: 0 30px 0 0
+	
+		a
+			display: block
+			min-height: 25px
+			padding: 15px 5px
+		
+			&:hover
+				color: #0f5bbb
+				//@extend %opensans_bold
+		
+	p
+		border-bottom: 1px solid #bbbdbf
+		margin: 35px 30px 10px 5px
+		padding: 0 0 27px
+		
+#sondeos
+	h2
+		a
+			background-position: left -267px
+		
+#asesoria
+	h2
+		a
+			background-position: left -548px
+
+#hispanic
+	h2
+		a
+			background-position: left -815px
+
+#logistica
+	h2
+		a
+			background-position: left -1134px
+
+#productos
+	h2
+		a
+			background-position: left -1464px
+
+	ul
+		span
+			display: block
+			padding: 5px 0 5px 0
+			
+
+.previa
+	background: url(#{$img}previa_icon.png) left 0 no-repeat
+	display: inline-block
+	margin: 0 0 0 5px
+	padding: 9px 0 10px 37px
+	
+	
+#bloque_servicios
+	border-top: 1px solid #bbbdbf
+	margin: 30px 0 0
+	padding: 60px 0 0
+	
+#btn_soluciones
+	background: url(#{$img}menu_servicios_icon.png) 0 5px no-repeat
+	color: #808184
+	display: block
+	@extend %gotham
+	font-size: 10px
+	margin:  0 0 20px
+	padding: 7px 0 7px 55px
+	text-transform: uppercase
+	
+	&:hover
+		color: lighten(#808184, 10)
+		
+#menu_servicios 
+	a
+		color: #231f20
+		
+	ul
+		list-style-type: none
+		margin: 10px 0 0
+		padding: 0
+
+		li
+			border-bottom: 1px solid #bbbdbf
+			@extend %opensans_semibold
+
+		a
+			color: #808184
+			display: block
+			min-height: 25px
+			padding: 15px 5px
+
+			&:hover
+				color: #0f5bbb
+				font-size: 15px
+				
+		a.active
+			color: #0f5bbb
+			@extend %opensans_bold
+		
+#services_content
+	h2
+		color: #58595b
+		@extend %opensans_bold
+		font-size: 23px
+		margin: 0 0 50px
+		text-transform: none
+		
+#services_content.previa
+	background: transparent
+	padding: 0
+
+#services_list
+	.active
+		a
+			color: #0f5bbb
+		
+#next, #next_mobile
+	background: url(#{$img}services_menu_next.png) 0 0 no-repeat
+	display: block
+	height: 37px
+	line-height: 50000em
+	margin: -2px 0 0 10px
+	overflow: hidden
+	width: 20px
+	
+	&:hover
+		cursor: pointer
+	
+#next_mobile
+	display: none
+	
+#solutions_main_wrapp	
+	position: relative
+	overflow: hidden
+	max-width: 100%
+	width: 100%
+	
+#listado_soluciones.active, #bloque_servicios.active
+	position: relative
+	left: 0
+	top: 0
+	
+#bloque_servicios, #listado_soluciones
+	left: 120%
+	position: absolute
+	top: 0
+	@include transition(left 0.5s)
+	
+#listado_soluciones
+	left: -120%
+	
+#next:hover
+	cursor: pointer
+	
+	
+#menu_servicios
+	#services_header
+		background: url(#{$img}services_medium_sprite.png) 0 0 no-repeat
+		padding: 110px 0 0
+		
+		a
+			display: block
+			padding: 0
+			
+			
+	#services_header.sondeos-opinion-publica
+		background-position: 0 -340px
+		
+		
+	#services_header.asesoria-mercadotecnia
+		background-position: 0 -677px
+		
+		
+	#services_header.hispanic-market-research
+		background-position: 0 -987px
+		
+		
+	#services_header.apoyo-logistico-campo
+		background-position: 0 -1353px
+		
+		
+	#services_header.productos-focus
+		background-position: 0 -1699px
+		
+	.previa	
+		background: transparent
+		display: block
+		margin: 0
+		padding: 0
+	
+		
+.estudios-de-mercado
+	#menu_servicios
+		h2
+			background-position: 0 0 
+
+#solutions_slider
+	margin: 0
+	padding: 0
+	
+	ul
+		height: 447px
+		margin: 0
+		overflow: hidden
+		
+	li
+		background: url(#{$img}banner_solutions.jpg) no-repeat  0 0
+		background-size: cover
+		margin: 0
+		width: 100%

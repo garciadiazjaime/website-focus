@@ -1,0 +1,156 @@
+{% extends 'layout/base.html' %}
+{% block site_wrapper %}
+	{% load staticfiles %}{% autoescape off %}
+	<div class="container">
+		<h1>{{data.6}}</h1>
+	</div>
+	<div class="container">
+		<div id="main_contact" class="row-fluid">
+			<div class="span4">
+				<h3>Tijuana</h3>
+				<p>Santa María #2841 Col. América <br />
+				Tijuana B.C. 22044</p>
+				<br />
+				<p>(664) 634 2930 y (664) 634 2815<br />
+				{{data.3}}
+				</p>
+				{{data.0}}
+
+
+				<div class="mobile">
+					{{data.9}}
+
+				</div>
+			</div>
+			<div class="span4">
+				<h3>Mexicali</h3>
+				<p>Cetys University  Mexicali Campus<br /> Office #8010</p>
+				<br />
+				<p>(686) 554 3347 y (686) 552 3345<br />
+				{{data.4}}
+				</p>
+
+				{{data.1}}
+
+
+				<div class="mobile ">
+					{{data.10}}
+				</div>
+			</div>
+			<div class="span4">
+				<h3>Focus USA</h3>
+			</div>
+		</div>
+
+
+		<div class="row-fluid hidden-phone" id="map_ctrl">
+			<div class="span4">
+				<p id="map_tj_title"  class="active" data-map="0">Tijuana</p>
+			</div>
+			<div class="span4">
+				<p id="map_mx_title" data-map="1">Mexicali</p>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="maps" class="hidden-phone">
+		<div id="map_tj" class="active animated" data-map="0"></div>
+	</div>
+
+	<div class="container">
+		{% if email_response %}
+		<h3>{{email_response}}</h3>
+		{% endif %}
+		<h2 class="big">{{data.7}}</h2>
+		<div class="row-fluid">
+			<div class="span6">
+				<p class="small">{{data.8}}</p>
+			</div>
+			<div class="span6"></div>
+		</div>
+		<form method="post" action="/{{page.local}}" id="contact_form">{% csrf_token %}
+			<div class="row-fluid">
+				<div class="span6">
+					 {{ form.name.errors }}
+					<label for="id_name">{{data.12}} *</label>
+					{{ form.name }}
+
+					{{ form.company.errors }}
+					<label for="id_company">{{data.13}}</label>
+					{{ form.company }}
+
+					{{ form.email.errors }}
+					<label for="id_email">{{data.14}} *</label>
+					{{ form.email }}
+
+					{{ form.service.errors }}
+
+					<div id="select_wrapper">
+						<select name="service" id="id_service">
+						{% if lang == 0 %}
+							<option value="" selected="selected">Servicio de interés</option>
+							<option value="estudios-mercado">Estudio de Mercado</option>
+							<option value="sondeo-opinion-publica">Sondeo de opinión pública</option>
+							<option value="asesoria-mercadotecnia">Asesoría en mercadotecnia</option>
+							<option value="hispanic-market-research">Hispanic market research</option>
+							<option value="apoyo-logistico-campo">Apoyo logístico de campo</option>
+							<option value="productos-focus">Productos focus</option>
+						{% else %}
+							<option value="" selected="selected">Select a service</option>
+							<option value="estudios-mercado">Market studies</option>
+							<option value="sondeo-opinion-publica">Public opinion polls</option>
+							<option value="asesoria-mercadotecnia">Marketing advisory</option>
+							<option value="hispanic-market-research">Hispanic Market Research</option>
+							<option value="apoyo-logistico-campo">Field logistical support</option>
+							<option value="productos-focus">Focus products</option>
+						{% endif %}
+						</select>
+					</div>
+
+					<hr id="contact_line" />
+				</div>
+				<div class="span6">
+						{{ form.position.errors }}
+						<label for="id_position">{{data.15}}</label>
+						{{ form.position }}
+
+						{{ form.location.errors }}
+						<label for="id_location">{{data.16}}</label>
+						{{ form.location }}
+
+						{{ form.telephone.errors }}
+						<label>{{data.17}}</label>
+						{{ form.telephone }}
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span12">
+					{{ form.message.errors }}
+					<label for="id_message">{{data.18}} *</label>
+					{{ form.message }}
+					<input type="submit" value="{{data.19}}" class="custom_submit">
+					<div id="form_response"></div>
+				</div>
+				</div>
+			</div>
+		</form>
+
+		<span id="cobertura"></span><span id="coverage"></span>
+		<h2>{{data.20}}</h2>
+	</div>
+	<div id="coverage_map">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span5 offset7">
+					<p>
+					{{data.24}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endautoescape %}
+{% endblock %}

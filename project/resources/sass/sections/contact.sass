@@ -1,0 +1,172 @@
+.contact, .contacto
+	p.small
+		font-size: 14px
+
+	.error
+		color: #a94442
+		
+	#wrapper
+		margin-top: 150px
+	h1
+		border-bottom: 1px solid #bbbdbf
+		font-size: 16px
+		margin: 0 0 10px
+		padding: 0 0 15px 10px
+		text-transform: uppercase
+
+		
+	h3
+		color: #231f20
+		@extend %gotham
+		font-size: 17px
+
+	h2.big
+		color: #00cd88
+		@extend %gotham
+		font-size: 40px
+		margin: 40px 0 20px
+		text-transform: none
+	
+	#main_contact	
+		.phone, .mail
+			background: url(#{$img}green_icon_phone.jpg) 0 0 no-repeat
+			display: inline-block
+			height: auto
+			margin: 20px 0 30px
+			overflow: hidden
+			opacity: 1
+			@include transition(opacity 0.5s)
+			width: 62px
+			
+			&:hover
+				opacity: .8
+			
+			a
+				color: #808184
+				display: block
+				@extend %opensans_bold
+				padding: 60px 0 0
+				
+		.mail
+			background-image: url(#{$img}green_icon_email.jpg)
+			margin: 20px 0 30px 10px
+
+a.view_google
+	color: #1a4996
+	font-size: 14px
+	
+	&:hover
+		color: lighten(#1a4996, 10)
+	
+	
+	
+#map_tj_title, #map_mx_title, #map_usa_title
+	background: #d0d2d3
+	color: #fff
+	margin: 50px 0 0
+	padding: 8px 20px	
+	
+	&:hover
+		background: darken(#d0d2d3, 10)
+		cursor: pointer
+	
+#map_tj_title.active, #map_mx_title.active, #map_usa_title.active
+	background: #00cd88
+	
+	&:hover
+		background: #00cd88
+		cursor: default
+
+#map_tj, #map_mx, #map_usa
+	display: none
+	height: 330px
+
+#map_tj.active, #map_mx.active, #map_usa.active
+	display: block
+	
+	
+/* --------- Form -------- */
+label
+	color: #808184
+	@extend %opensans_bold
+	font-size: 13px
+	margin: 10px 0 0
+	padding: 0 0 10px 10px
+
+input.custom_textbox, textarea
+	background-color: #fff
+	border: 1px solid #e5e6e7
+	border-width: 2px 0 1px
+	color: #808184
+	display: block
+	font-size: 20px
+	@include border-radius(0)
+	@include box-shadow(none)
+	padding: 8px 2%
+	@include transition(background-color, .5s)
+	width: 96%
+	
+	&:hover, &:focus	
+		background-color: #d9f5f5
+		border-color: #e5e6e7
+
+textarea
+	height: 110px
+	
+input.custom_submit
+	background: #00cd88
+	border: none
+	color: #fff
+	display: block
+	@extend %gotham
+	font-size: 14px
+	margin:  20px 0 0 auto
+	padding: 10px 15px
+	width: 185px
+
+	&:hover
+		background: lighten(#00cd88, 7)
+
+#select_wrapper
+	background: #D9F5F5 url(#{$img}select_icon.png) right 18px no-repeat
+	border: 1px solid #e5e6e7
+	border-width: 2px 0 1px
+	margin: 40px 0 0
+	overflow: hidden
+	width: 100%
+	
+	select
+		background: transparent
+		border: none
+		color: #808184
+		@extend %opensans_bold
+		-webkit-appearance: none 
+		font-size: 13px
+		margin: 6px 0 4px
+		width: 110%
+		
+#contact_line
+	background: #e5e6e7
+	border: none
+	height: 2px
+	margin: 40px 0 0
+	
+	
+#coverage_map
+	background: #dbf5f5 url(#{$img}inicio_map.jpg) center top no-repeat
+	background-size: auto 100%
+	padding: 70px 0 170px
+	margin: 0 0 -140px
+	color: #606164
+		
+	ul
+		margin: 0
+	li
+		list-style: none
+		list-position: inside
+		color: #58595b
+		font-size: 12px
+
+	p
+		color: #231f20
+		font-size: 15px

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load staticfiles %}
+	<title>{{data.66}}</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0">
+	<meta name="author" content="http://mintitmedia.com">
+	<meta name="description" content="{{data.67}}">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" type="image/png" href="{% static 'images/focus-icon.ico' %}">
+
+	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/animate-custom.css' %}?version=2001" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/hover.css' %}?version=2001" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/screen.css' %}?version=2001" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/v2/main.css' %}?version=2001" rel="stylesheet" type="text/css" />
+	{% if flavour == 'mobile' %}
+	<link href="{% static 'css/screen_mobile.css' %}?version=2001" rel="stylesheet" type="text/css" />
+	{% endif %}
+	<!--[if IE]>
+		<link href="{% static 'css/ie.css' %}" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!--[if lte IE 8]>
+		<link href="{% static 'css/ie8-older.css' %}" rel="stylesheet" type="text/css" />
+	<![endif]-->
+
+</head>
+<body class="{{page.local}} {{page.lang}}">
+	<header id="header">
+		{% include 'layout/header.html' %}
+	</header>
+	<section id="wrapper">
+		{% block site_wrapper %}{% endblock %}
+	</section>
+	<footer>
+		{% include 'layout/footer.html' %}
+	</footer>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	{% if 'contact' in page.local  %}
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.5&sensor=false"> </script>
+	{% endif %}
+	{% if page.local == "nosotros" or  page.local == "about-us" or page.local == "soluciones" or  page.local == "solutions"  %}
+		<script src="{% static 'js/modernizr.custom.js' %}"></script>
+		<script src="{% static 'js/full_width_slider.js' %}"></script>
+	{% endif %}
+	{% if 'contact' in page.local  %}
+	<script src="{% static 'js/jquery.validate.js' %}" ></script>
+	{% endif %}
+	<script src="{% static 'js/jquery.cycle.all.latest.js' %}" ></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<script src="{% static 'js/functions.js' %}?version=2001" ></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-52529315-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,905 @@
+
+
+.about-us
+	.brand
+		background-image: url(#{$img}focus_logo_ingles.png)
+
+.nosotros
+	.brand
+		background-image: url(#{$img}focus_logo_white.png)
+
+.about-us, .nosotros
+
+	#hidden_menu
+		a
+			color: #777777
+
+			&:hover
+				color: #555555
+
+		#lang_hdn
+			color: #414042
+			a
+				color: #414042
+
+				&:hover
+					color: #8d8c8f
+
+
+		.nav
+			.active
+				a
+					color: #000
+				a:hover
+					color: #000
+
+
+	.navbar
+		.navbar-inner
+			.whiter
+				background: transparent
+
+	.navbar
+		background: transparent
+
+
+		.nav > li > a
+			text-shadow: none
+
+		.nav, #lang
+			color: #fff
+
+			a
+				color: #fff
+
+				&:hover
+					color: darken(#fff, 10)
+
+
+		.nav
+			.active
+				a
+					color: #aaacaf
+				a:hover
+					color: #aaacaf
+
+		a.btn-navbar
+			background-color: white
+
+	.nav-collapse .nav > li > a
+		margin-bottom: 0
+
+	.navbar-fixed-top
+		position: absolute
+
+
+	.big
+		color: #4c4c4c
+		letter-spacing: 0.04em
+		line-height: 1.5em
+
+
+	#intro
+		background: url('#{$img}banner_about.jpg') center no-repeat
+		background-size: cover
+		overflow: hidden
+		color: #fff
+		height: auto
+		margin: 0 0 20px
+		@extend %opensans_semibold
+		font-size: 13px
+		padding: 0
+		text-align: center
+
+		p
+			margin: 0
+
+		em
+			display: block
+			font-size: 42px
+			@extend %gotham
+			font-weight: normal
+			line-height: 1em
+			padding: 0 0 25px
+
+		.head_gradient
+			display: block
+			height: 1000px
+			margin: 0 0 -1000px 0
+			@include filter-gradient(rgba(1,196,139,.5), rgba(15, 91, 186, .5), horizontal)
+			@include background-image(linear-gradient(left, rgba(1,196,139,1), rgba(15, 91, 186, .2), rgba(15, 91, 186, 1)))
+
+		.bottom_arch
+			display: block
+			background: url('#{$img}aboutus_bottom_arch_bkg.png') no-repeat
+			background-size: 100% 100%
+			margin: 40px auto 0
+			height: 80px
+			width: 100%
+		.container
+			padding: 180px 0 40px 0
+
+	h1
+		color: #00cd88
+		font-size: 37px
+		margin: 0 0 15px
+		text-transform: uppercase
+
+	h3
+		margin-bottom: 20px
+
+	.row.negative-top
+		margin-top: -15px
+
+
+	.row.positive-top
+		margin-top: 120px
+
+	.bullets
+		display: inline-block
+		text-align: center
+		max-width: 100%
+		width: 377px
+
+	h2.gray
+		color: #58595b
+		font-size: 20px
+		margin: 80px 0 0
+		text-transform: uppercase
+
+#reasons_accordeon
+	list-style-type: none
+	margin: 40px 0 70px
+
+	ul
+		color: #00cd88
+		font-size: 25px
+		list-style-type: disc
+
+		span
+			color: #808184
+			font-size: 13px
+			position: relative
+			top: -2px
+			vertical-align: middle
+
+	h3
+		background: url(#{$img}accordeon_arrows.png) right 10px no-repeat
+		border-bottom: 1px solid #a6a8ab
+		@extend %opensans_bold
+		font-size: 17px
+		margin: 15px 0 0
+		padding: 5px 35px 9px 0
+
+		&:hover
+			cursor: pointer
+
+	li
+		div
+			ul
+				padding: 25px 0 15px
+
+#slider_conocenos_wrapp
+	overflow: hidden
+	position: relative
+	width: 100%
+
+	#know-about-us-phrase
+		color: #fff
+		@extend %gotham
+		font-size: 33px
+		height: 293px
+		left: 60%
+		line-height: 1em
+		margin: 0 0 0 -50%
+		padding: 95px 0 0
+		position: absolute
+		text-align: center
+		top: 70px
+		width: 80%
+		z-index: 5
+
+
+#slider_conocenos
+	margin: 0 0 50px
+	overflow: hidden
+	position: relative
+	z-index: 3
+
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+
+	li
+		background: url(#{$img}slider_conocenos/main_office.jpg) 0 0 no-repeat//tmp
+		background-size: cover //tmp
+		height: 133px
+		padding: 80px 0
+		text-align: center
+
+	p.one_line
+		padding-top: 42px
+
+	#conocenos_sld
+		background: url(#{$img}slider_conocenos/main_office.jpg) 0 0 no-repeat
+		background-size: cover
+
+	#conocenos2_sld
+		background: url(#{$img}slider_conocenos/office_map.jpg) 0 0 no-repeat
+		background-size: cover
+
+	#conocenos3_sld
+		background: url(#{$img}slider_conocenos/office_round_table.jpg) 0 0 no-repeat
+		background-size: cover
+
+	#conocenos4_sld
+		background: url(#{$img}slider_conocenos/office_mirror.jpg) 0 0 no-repeat
+		background-size: cover
+
+.cbp-fwprev, .cbp-fwnext
+	background: url(#{$img}nosotros_slider_sprite.png) left 0 no-repeat
+	display: block
+	height: 26px
+	left: 20px
+	line-height: 5000em
+	opacity: 1
+	overflow: hidden
+	position: absolute
+	top: 175px
+	@include transition(opacity .2s)
+	width: 20px
+	z-index: 15
+
+	&:hover
+		cursor: pointer
+		opacity: .7
+
+.cbp-fwnext
+	background-position: left -58px
+	left: auto
+	right: 20px
+
+
+#chronology
+	list-style-type: none
+	margin: 50px 0 60px
+	padding: 0
+
+	li
+		margin: 0 0 10px
+
+	.date
+		color: #0f5bbb
+		display: inline-block
+		@extend %gotham
+		font-size: 16px
+		min-width: 50px
+		min-width: 14%
+
+#nosotros_slider
+	max-width: 100%
+
+	img
+		max-width: 100%
+
+#personnel
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+	li
+		margin: 0 0 50px
+
+	#dayan
+		margin: 75px 0 50px
+
+	.personnel_picture, .personnel_info
+		display: inline-block
+		vertical-align: top
+
+	.personnel_picture
+		margin: 0 4% 0 0
+		max-width: 138px
+		width: 37%
+
+	.personnel_info
+		width: 57%
+
+		h3
+			color: #808184
+			@extend %opensans_semibold
+			font-size: 13px
+
+		em
+			color: #0f5bbb
+			display: block
+			@extend %opensans_bold
+			font-size: 15px
+			text-transform: uppercase
+
+		p
+			font-size: 13px
+
+		a
+			color: #808184
+			@extend %opensans_bold
+			text-decoration: none
+
+			&:hover
+				color: lighten( #808184, 5)
+
+#ochoa
+	.personnel_picture
+		background: url(#{$img}/list_personnel/ochoa.jpg) center 0 no-repeat
+		background-size: cover
+
+#dayan
+	.personnel_picture
+		background: url(#{$img}/list_personnel/dayan.jpg) center 0 no-repeat
+		background-size: cover
+
+#infraestructure_elements
+	margin: 30px 0 95px
+
+	h3
+		color: #808184
+		@extend %opensans_bold
+		font-size: 15px
+		margin: 45px 0 25px
+
+	.infraestructure_img
+		background: url(#{$img}insfraestructure_sprite.jpg) center 0 no-repeat
+		@include border-radius(300px)
+		display: inline-block
+		height: 136px
+		width: 136px
+
+	a.green_link
+		display: block
+		margin: 12px 0 0
+
+#in_technology
+	.infraestructure_img
+		background-position: center -200px
+
+#in_gesell
+	.infraestructure_img
+		background-position: center -440px
+
+#in_vehicles
+	.infraestructure_img
+		background-position: center -700px
+
+#clients_agencies
+	color: #bbbdbf
+	@extend %opensans_bold
+	list-style-type: none
+	margin: 11px 0 15px auto
+	max-width: 100%
+	padding: 0
+	width: 720px
+
+	li.active
+		color: #00cd88
+
+		&:hover
+			color: #00cd88
+			cursor: default
+
+	li
+		display: inline-block
+		font-size: 15px
+		margin-right: 20px
+
+		&:hover
+			color: darken(#bbbdbf, 5)
+			cursor: pointer
+
+#carousel-aboutus
+	padding-bottom: 20px
+	position: relative
+	width: 414px
+
+	.carousel
+		min-height: 250px
+
+	.carousel-indicators
+		bottom: -20px
+		height: 15px
+		left: 0
+		position: absolute
+		text-align: center
+		top: auto
+		width: 100%
+
+		li
+			background: transparent
+			border: 1px solid #26b576
+			display: inline-block
+			float: none
+
+		li.active
+			background: #26b576
+
+#clients_list_logos, #agencies_list_logos, #association_list_logos
+	display: none
+	opacity: 0
+	left: -20px
+	padding-bottom: 20px
+	position: relative
+
+	.carousel
+		min-height: 250px
+
+	.carousel-control
+		background: transparent
+		border: 1px solid #00CD88
+		color: #00CD88
+		font-size: 20px
+		height: 25px
+		line-height: 1em
+		padding: 5px 0 0
+		top: 100px
+		width: 30px
+
+	.left.carousel-control
+		left: -40px
+
+	.right.carousel-control
+		right: -40px
+
+	.carousel-indicators
+		bottom: -20px
+		height: 15px
+		left: 0
+		position: absolute
+		text-align: center
+		top: auto
+		width: 100%
+
+		li
+			background: transparent
+			border: 1px solid #26b576
+			display: inline-block
+			float: none
+
+		li.active
+			background: #26b576
+
+
+	ul
+		list-style-type: none
+		margin: 0 0 0 auto
+		max-width: 100%
+		padding: 0
+		@include transition(opacity 0.5s)
+		width: 720px
+
+		li
+			background: url(#{$img}sprite_clients.jpg) left 0 no-repeat
+			display: inline-block
+			height: 80px
+			min-width: 140px
+			width: 24%
+			margin: 1px
+
+			span
+				display: block
+				height: 100%
+				line-height: 5000em
+				overflow: hidden
+				width: 100%
+
+	#seguro_popular
+		background-position: left 0
+
+	#burguer_king
+		background-position: left -111px
+
+	#carls
+		background-position: left -260px
+
+	#chevrolet
+		background-position: left -434px
+
+	#coca
+		background-position: left -625px
+
+	#lala
+		background-position: left -811px
+
+	#padres
+		background-position: left -1055px
+
+	#televisa
+		background-position: left -1305px
+
+	#tijuana_innovadora
+		background-position: left -1569px
+
+	#auto_productos
+		background-position: left -1822px
+
+	#cetys
+		background-position: left -2134px
+
+	#doble_articulacion
+		background-position: left -2424px
+
+	#iamsa
+		background-position: left -2742px
+
+	#imperial
+		background-position: left -3073px
+
+
+	#las_brasas
+		background-position: left -3368px
+
+	#la_voz
+		background-position: left -3697px
+
+	#little_caesars
+		background-position: -4px -3985px
+
+	#mexicali
+		background-position: -4px -4275px
+
+	#noticias_66
+		background-position: -4px -4576px
+
+	#visual_creativos
+		background-position: -4px -4999px
+
+	#bajaduty
+		background-position: -4px -5348px
+
+	#chrysler
+		background-position: -4px -5700px
+
+	#citrofrut
+		background-position: -4px -6042px
+
+	#conoco
+		background-position: -4px -6444px
+
+	#gamboa
+		background-position: -4px -6809px
+
+	#baja
+		background-position: -4px -7232px
+
+	#infobaja
+		background-position: -4px -7610px
+
+	#innopack
+		background-position: -4px -8026px
+
+	#maxilana
+		background-position: -4px -8447px
+
+	#millward_brown
+		background-position: -4px -8876px
+
+	#megaalimentos
+		background-position: -4px -9275px
+
+	#melo
+		background-position: -4px -9708px
+
+	#mexico_power
+		background-position: -4px -10116px
+
+	#mvs
+		background-position: -4px -10443px
+
+	#ndi
+		background-position: -4px -10739px
+
+	#pan
+		background-position: -4px -11059px
+
+	#promocasa
+		background-position: -4px -11361px
+
+	#rendichicas
+		background-position: -4px -11676px
+
+	#ruba
+		background-position: -4px -12014px
+
+	#smart_final
+		background-position: -4px -12362px
+
+	#soriana
+		background-position: -4px -12701px
+
+	#tijuana
+		background-position: -4px -12987px
+
+	#total_fitness
+		background-position: -4px -13393px
+
+	#total_logistics
+		background-position: -4px -13773px
+
+	#uniradio
+		background-position: -4px -14150px
+
+	#xolos
+		background-position: -4px -14494px
+
+	#zeta
+		background-position: -4px -14979px
+
+
+#agencies_list_logos
+	ul
+		li
+			background-image: url(#{$img}sprite_agencies.jpg)
+
+		#berumen
+			background-position: left 0
+
+		#bgc
+			background-position: left -111px
+
+		#brain
+			background-position: left -260px
+
+		#braniff
+			background-position: left -434px
+
+		#cinco
+			background-position: left -625px
+
+		#dlr
+			background-position: left -811px
+
+		#evidens
+			background-position: left -1055px
+
+		#gdv
+			background-position: left -1305px
+
+		#gfk
+			background-position: left -1569px
+
+		#goldfarbs
+			background-position: left -1822px
+
+		#imersa
+			background-position: left -2134px
+
+		#inbox
+			background-position: left -2424px
+
+		#inmega
+			background-position: left -2742px
+
+		#insitum
+			background-position: left -3073px
+
+
+		#instinto
+			background-position: left -3368px
+
+		#ipsos
+			background-position: left -3697px
+
+		#iqinnerquest
+			background-position: -4px -3985px
+
+		#lexia
+			background-position: -4px -4275px
+
+		#marketing_group
+			background-position: -4px -4576px
+
+		#master_research
+			background-position: -4px -4999px
+
+		#mega_marketing
+			background-position: left -5319px
+
+		#mercadiez
+			background-position: left -5601px
+
+		#mercaei
+			background-position: left -5909px
+
+		#millward_brown
+			background-position: left -6253px
+
+		#more
+			background-position: left -6625px
+
+		#neural_research
+			background-position: left -6966px
+
+		#nodo
+			background-position: left -7261px
+
+		#on_target
+			background-position: left -7586px
+
+		#ovalbox
+			background-position: left -7957px
+
+		#parametria
+			background-position: left -8313px
+
+		#pearson
+			background-position: left -8640px
+
+		#psyma
+			background-position: left -8940px
+
+		#q_solutions
+			background-position: left -9251px
+
+		#qualimerec
+			background-position: left -9569px
+
+		#serta
+			background-position: -7px -9876px
+
+		#shopnchek
+			background-position: left -10182px
+
+		#tns
+			background-position: left -10559px
+
+		#wisdom
+			background-position: left -10916px
+
+		#aga
+			background-position: left -11282px
+
+		#e_aplicada
+			background-position: left -11739px
+
+#association_list_logos
+	ul
+		li
+			background-image: url(#{$img}sprite_associations.jpg)
+
+
+		#endeavor_mx
+			background-position: left -111px
+
+		#mra
+			background-position: 10px -260px
+
+#clients_list_logos.active, #agencies_list_logos.active, #association_list_logos.active
+	display: block
+	opacity: 1
+
+#extra_history
+	display: none
+
+#extra_history.show
+	display: block
+
+#infraestructure
+	display: block
+	margin-bottom: 40px
+
+#focus-vision
+	margin: 140px 0 60px
+
+hr.extra_margin
+	margin: 20px 0 60px
+
+#team_block
+	background: #f7f8f8
+	padding: 30px 0 55px
+
+	.small_container
+		margin: 0 auto
+		padding: 0 0 0 10%
+		width: 90%
+
+	h2
+		font-size: 16px
+		margin-bottom: 50px
+
+	ul
+		color: #808184
+		font-size: 13px
+		list-style-type: none
+		margin: 0
+		padding: 0
+
+		li
+			margin: 0 0 30px
+
+		a.name
+			background: url(#{$img}email_icon.png) right 3px no-repeat
+			color: #808184
+			display: inline-block
+			@extend %opensans_bold
+			font-size: 15px
+			opacity: 1
+			padding: 0 20px 0 0
+			@include transition(opacity 0.2s)
+
+			&:hover
+				opacity: 0.8
+
+		em
+			color: #43b983
+			display: block
+			font-size: 15px
+			font-style: normal
+
+
+#experiencia
+	.span4
+		padding-right: 80px
+
+/* --------------- FULL WIDTH SLIDER ----------- */
+.cbp-fwslider
+	position: relative
+	margin: 30px 0 15px
+	overflow: hidden
+	padding: 40px 0 20px
+
+	ul
+		background: #2d3d50
+		height: 260px
+		margin: -20px 0px -10px
+		padding: 0
+		list-style-type: none
+
+
+		li
+			-webkit-transform: translateZ(0)
+			-moz-transform: translateZ(0)
+			transform: translateZ(0)
+			float: left
+			display: block
+			margin: 0
+			padding: 0
+
+.cbp-fwslider ul li > a, .cbp-fwslider ul li > div
+	display: block
+	text-align: center
+	outline: none
+
+
+.cbp-fwslider ul li > a img
+	border: none
+	@include border-radius(5px)
+	@include box-shadow(0 2px 7px  rgba(0, 0, 0, .4))
+	display: block
+	margin: 0 auto
+	max-width: 75%
+
+
+.cbp-fwdots
+	position: absolute
+	bottom: 0px
+	white-space: nowrap
+	text-align: center
+	width: 100%
+	display: none
+
+	span
+		display: inline-block
+		width: 18px
+		height: 18px
+		background: #ddd
+		margin: 4px
+		border-radius: 50%
+		cursor: pointer
+
+
+		&:hover
+			background: #999
+
+	span.cbp-fwcurrent
+		background: #47a3da
+		box-shadow: 0 0 0 2px #47a3da
+		@include transition(box-shadow 0.2s ease-in-out)

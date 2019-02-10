@@ -1,0 +1,378 @@
+{% extends 'layout/base.html' %} {% block site_wrapper %} {% load staticfiles %}{% autoescape off %}
+<!-- Banner -->
+<div id="intro" class="first_block">
+	<span class="head_gradient"></span>
+	<div class="container">
+		<p>{{data.0}}</p>
+	</div>
+	<span class="bottom_arch"></span>
+</div>
+
+<!-- Banner -->
+<!-- Sección -->
+
+<div class="container">
+	<br />
+	<span id="quienes-somos"></span><span id="who-are-we"></span>
+	<div class="row-fluid">
+		<div class="span6">
+			<h1>{{data.1}}</h1>
+			<p>{{data.2}}</p>
+		</div>
+		<div class="span6 align-right">
+			<div id="carousel-aboutus" class="carousel slide" data-ride="carousel" data-interval="6000">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-aboutus" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-aboutus" data-slide-to="1"></li>
+					<li data-target="#carousel-aboutus" data-slide-to="2"></li>
+					<li data-target="#carousel-aboutus" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="{% static 'images/aboutus/slider/Focus-Slider_nosotros1.png' %}" alt="{{request.path}}" />
+					</div>
+					<div class="item">
+						<img src="{% static 'images/aboutus/slider/Focus-Slider_nosotros2.png' %}" alt="{{request.path}}" />
+					</div>
+					<div class="item">
+						<img src="{% static 'images/aboutus/slider/Focus-Slider_nosotros3.png' %}" alt="{{request.path}}" />
+					</div>
+					<div class="item">
+						<img src="{% static 'images/aboutus/slider/Focus-Slider_nosotros4.png' %}" alt="{{request.path}}" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid negative-top">
+		<div class="span6">
+			<h3>{{data.3}}</h3>
+		</div>
+		<div class="span6">
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span6">
+			<p>{{data.4}}</p>
+		</div>
+		<div class="span6">
+			<p>{{data.5}}</p>
+		</div>
+	</div>
+</div>
+<div id="slider_conocenos_wrapp">
+
+	<p id="know-about-us-phrase" class="container">
+		{{data.75}}
+	</p>
+	<div id="slider_conocenos" class="cbp-fwslider">
+		<ul>
+			<li id="conocenos_sld">&nbsp;</li>
+			<li id="conocenos2_sld">&nbsp;</li>
+			<li id="conocenos3_sld">&nbsp;</li>
+			<li id="conocenos4_sld">&nbsp;</li>
+		</ul>
+	</div>
+
+</div>
+
+
+<span id="historia"></span><span id="history"></span>
+<div class="container">
+	<div class="row-fluid">
+		<div class="span7">
+			<h2>{{data.19}}</h2>
+
+			<ul id="chronology">
+				<li>{{data.23}}
+				</li>
+				<li>{{data.24}}
+				</li>
+				<li>{{data.25}}
+				</li>
+				<li>{{data.26}}
+				</li>
+			</ul>
+		</div>
+		<div class="span5">
+			<ul id="personnel">
+				<li id="ochoa">
+					<img src="{% static 'images/list_personnel/ochoa.jpg' %}" alt="Juan Carlos Ochoa" class="personnel_picture" /><span class="personnel_info">
+							<h3>{{data.27}}</h3>
+							<p>{{data.28}}
+							<a href="mailto:juancarlos@focus.com.mx" title="{{data.29}}">{{data.30}}</a></p>
+						</span>
+				</li>
+				<li id="dayan">
+					<img src="{% static 'images/list_personnel/dayan.jpg' %}" alt="Juan Carlos Ochoa" class="personnel_picture" /><span class="personnel_info">
+							<h3>{{data.31}}</h3>
+							<p>{{data.32}}
+							<a href="mailto:omar@focus.com.mx" title="{{data.33}}">{{data.34}}</a></p>
+						</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<span id="equipo"></span><span id="staff"></span>
+</div>
+<div id="team_block">
+	<div class="container">
+		<h2>{{data.79}}</h2>
+		<div class="small_container">
+			<div class="row-fluid">
+				<div class="span6">
+					<ul>
+						{{data.78}}
+					</ul>
+				</div>
+				<div class="span6">
+					<ul>
+						{{data.82}}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<span id="infraestructura"></span><span id="infrastructure"></span>
+	<h2>{{data.35}}</h2>
+	<div id="infraestructure_elements" class="row-fluid">
+		<div id="in_location" class="span3">
+			<span class="infraestructure_img"></span>
+			<h3>{{data.36}}</h3>
+			<p>{{data.37}}</p>
+		</div>
+		<div id="in_technology" class="span3">
+			<span class="infraestructure_img"></span>
+			<h3>{{data.38}}</h3>
+			<p>{{data.39}}</p>
+		</div>
+		<div id="in_gesell" class="span3">
+			<span class="infraestructure_img"></span>
+			<h3>{{data.40}}</h3>
+			<p>{{data.41}}</p>
+		</div>
+		<div id="in_vehicles" class="span3">
+			<span class="infraestructure_img"></span>
+			<h3>{{data.42}}</h3>
+			<p>{{data.43}}
+			</p>
+		</div>
+	</div><span id="experiencia"><span><span id="experience"></span>
+	<div class="row-fluid positive-top">
+		<div class="span4">
+			<h2 id="experience_title">{{data.44}}</h2>
+			<p>{{data.45}}</p>
+		</div>
+		<div class="span8">
+			<ul id="clients_agencies">
+				<li id="clientes_list" class="active">{{data.46}}</li>
+				<li id="agencies_list">{{data.47}}</li>
+				<li id="association_list">{{data.80}}</li>
+			</ul>
+			<div id="clients_list_logos" class="active animated">
+				<div id="clientsCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#clientsCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#clientsCarousel" data-slide-to="1"></li>
+						<li data-target="#clientsCarousel" data-slide-to="2"></li>
+						<li data-target="#clientsCarousel" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<ul>
+								<li class="logo-gasmart"><span>gasmart</span></li><li class="logo-pan"><span>pan</span></li>
+								<li class="logo-calimax"><span>calimax</span></li><li class="logo-roma"><span>roma</span></li>
+								<li id="auto_productos"><span>Auto Productos</span></li>
+								<li id="bajaduty"><span>baja duty free</span></li>
+								<li id="carls"><span>Carls Jr.</span></li>
+								<li id="chrysler"><span>chrysler</span></li>
+								<li id="cetys"><span>Cetys</span></li>
+								<li id="ruba"><span>ruba</span></li>
+								<li id="doble_articulacion"><span>Doble articulación</span></li>
+								<li id="conoco"><span>conoco</span></li>
+								<li id="noticias_66"><span>Noticias 66</span></li>
+								<li id="megaalimentos"><span>mega alimentos</span></li>
+								<li id="seguro_popular"><span>Salud Seguro Popular</span></li>
+								<li id="melo"><span>Melo</span></li>
+							</ul>
+						</div>
+						<div class="item">
+							<ul>
+								<li class="logo-ga"><span>ga</span></li><li class="logo-makro"><span>makro</span></li>
+								<li class="logo-loginam"><span>loginam</span></li><li class="logo-ti"><span>ti</span></li>
+								<li id="las_brasas"><span>Las brasas</span></li>
+								<li id="infobaja"><span>infobaja</span></li>
+								<li id="la_voz"><span>La Voz</span></li>
+								<li id="innopack"><span>innopack</span></li>
+								<li id="little_caesars"><span>Little Caesars</span></li>
+								<li id="maxilana"><span>maxilana</span></li>
+								<li id="mexicali"><span>Mexicali</span></li>
+								<li id="mexico_power"><span>mexico power</span></li>
+								<li id="visual_creativos"><span>Visual Creativos</span></li>
+								<li id="mvs"><span>mvs</span></li>
+								<li id="chevrolet"><span>Chevrolet</span></li>
+								<li id="total_fitness"><span>total fitness</span></li>
+							</ul>
+						</div>
+						<div class="item">
+							<ul>
+								<li id="ndi"><span>ndi</span></li>
+								<li id="coca"><span>Coca</span></li>
+								<li id="pan"><span>pan</span></li>
+								<li id="burguer_king"><span>Burguer King</span></li>
+								<li id="promocasa"><span>promocasa</span></li>
+								<li id="lala"><span>Lala</span></li>
+								<li id="citrofrut"><span>citrofrut</span></li>
+								<li id="padres"><span>Padres</span></li>
+								<li id="iamsa"><span>IAMSA</span></li>
+								<li id="gamboa"><span>gamboa</span></li>
+								<li id="imperial"><span>Imperial</span></li>
+								<li id="baja"><span>baja california</span></li>
+								<li id="smart_final"><span>smart final</span></li>
+								<li id="televisa"><span>Televisa</span></li>
+								<li class="logo-soriana"><span>soriana</span></li>
+								<li id="rendichicas"><span>rendichicas</span></li>
+							</ul>
+						</div>
+						<div class="item">
+							<ul>
+								<li class="logo-ayuntamiento"><span>tijuana</span></li>
+								<li id="total_logistics"><span>total logistics</span></li>
+								<li id="uniradio"><span>uniradio</span></li>
+								<li id="xolos"><span>xolos</span></li>
+								<li id="zeta"><span>zeta</span></li>
+								<li class="logo-agrobaja"><span>agrobaja</span></li>
+								<li class="logo-teriyaki"><span>teriyaki</span></li>
+							</ul>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#clientsCarousel" data-slide="prev">
+						<</a>
+							<a class="right carousel-control" href="#clientsCarousel" data-slide="next">></a>
+				</div>
+				<!-- /.carousel -->
+
+			</div>
+			<div id="agencies_list_logos" class="animated">
+				<div id="agenciesCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#agenciesCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#agenciesCarousel" data-slide-to="1"></li>
+						<li data-target="#agenciesCarousel" data-slide-to="2"></li>
+						<li data-target="#agenciesCarousel" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<ul>
+								<li class="logo-sigmados"><span>sigmados</span></li><li class="logo-phenoma"><span>phenoma</span></li>
+								<li id="berumen"><span>Berumen</span></li>
+								<li class="logo-bgc"><span>BGC</span></li>
+								<li id="brain"><span>Brain</span></li>
+								<li id="cinco"><span>Cinco</span></li>
+								<li id="dlr"><span>DLR</span></li>
+								<li id="evidens"><span>Evidens</span></li>
+								<li id="gdv"><span>GDV group</span></li>
+								<li id="gfk"><span>GFK</span></li>
+								<li id="goldfarbs"><span>Goldfarbs</span></li>
+								<li class="logo-inmersa"><span>Imersa</span></li>
+								<li id="inbox"><span>inbox</span></li>
+								<li class="logo-kp"><span>kp</span></li>
+								<li class="logo-blue"><span>blue</span></li><li class="logo-bigfoot"><span>bigfoot</span></li>
+							</ul>
+						</div>
+						<div class="item">
+							<ul>
+								<li id="inmega"><span>inmega</span></li>
+								<li class="logo-insitum"><span>Insitum</span></li>
+								<li id="instinto"><span>Instinto</span></li>
+								<li id="ipsos"><span>Ipsos</span></li>
+								<li id="iqinnerquest"><span>IQ innerquest</span></li>
+								<li id="lexia"><span>Lexia</span></li>
+								<li id="marketing_group"><span>Evidens</span></li>
+								<li id="master_research"><span>Master research</span></li>
+								<li id="mega_marketing"><span>Mega Marketing</span></li>
+								<li id="mercadiez"><span>Mercadiez</span></li>
+								<li id="mercaei"><span>mercaei</span></li>
+								<li class="logo-integraciontotal"><span>integraciontotal</span></li>
+								<li class="logo-dinamia"><span>dinamia</span></li><li class="logo-epi"><span>epi</span></li>
+								<li class="logo-identa"><span>identa</span></li><li class="logo-elinstituto"><span>elinstituto</span></li>
+							</ul>
+						</div>
+						<div class="item">
+							<ul>
+								<li id="more"><span>More</span></li>
+								<li id="neural_research"><span>Neural research</span></li>
+								<li id="nodo"><span>Nodo</span></li>
+								<li id="on_target"><span>On target</span></li>
+								<li id="ovalbox"><span>Ovalbox</span></li>
+								<li id="parametria"><span>Parametria</span></li>
+								<li id="pearson"><span>Pearson</span></li>
+								<li id="psyma"><span>Psyma</span></li>
+								<li id="q_solutions"><span>Q Solutions</span></li>
+								<li id="qualimerec"><span>Qualimerec</span></li>
+								<li id="serta"><span>Serta</span></li>
+								<li id="shopnchek"><span>ShopNchek</span></li>
+								<li class="logo-intex"><span>intex</span></li><li class="logo-dinamo"><span>dinamo</span></li>
+								<li class="logo-lamarcalab"><span>lamarcalab</span></li><li class="logo-mandarina"><span>mandarina</span></li>
+							</ul>
+						</div>
+						<div class="item">
+							<ul>
+								<li id="tns"><span>TNS</span></li>
+								<li id="wisdom"><span>Wisdom</span></li>
+								<li id="aga"><span>AGA Marketing</span></li>
+								<li id="e_aplicada"><span>Estadística Aplicada</span></li>
+								<li class="logo-mda"><span>mda</span></li><li class="logo-promoteca"><span>promoteca</span></li>
+								<li class="logo-simple"><span>simple</span></li><li class="logo-tag"><span>tag</span></li>
+								<li class="logo-tlacuache"><span>tlacuache</span></li><li class="logo-re"><span>re</span></li>
+								<li class="logo-ss"><span>ss</span></li>
+								<li id="millward_brown"><span>millward brown</span></li>
+							</ul>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#agenciesCarousel" data-slide="prev">
+						<</a>
+							<a class="right carousel-control" href="#agenciesCarousel" data-slide="next">></a>
+				</div>
+				<!-- /.carousel -->
+
+
+			</div>
+			<div id="association_list_logos" class="animated">
+				<ul>
+					<li id="coparmex"><span>COPARMEX</span></li>
+					<li id="endeavor_mx"><span>Endeavor México</span></li>
+					<li id="mra"><span>Marketing research association</span></li>
+					<li class="focus-logo-amai"><span>Marketing research association</span></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div id="focus-vision">
+
+		<div class="row-fluid">
+			<div class="span4">
+				<img src="{% static '/static/images/focus-logo-AMAI.jpg'  %}" alt="AMAI">
+			</div>
+			<div class="span8">
+				<p>{{data.81}}</p>
+			</div>
+		</div>
+	</div>
+	<hr class="extra_margin" />
+	<div class="row-fluid">
+		<div class="span4">
+			<img src="{% static '/static/images/endeavor-mexico-logo.jpg'  %}" alt="Endeavor Mexico">
+		</div>
+		<div class="span8">
+			<p>{{data.77}}</p>
+		</div>
+	</div>
+</div>
+
+{% endautoescape %} {% endblock %}

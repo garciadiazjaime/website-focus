@@ -1,0 +1,290 @@
+.inicio, .home
+	#wrapper
+		margin-top: 150px
+	h2
+		color: #00cd88
+		text-trasform: uppercase
+		font-size: 25px
+		border-bottom: 1px solid #bbbdbf
+		width: 100%
+		text-align: center
+		padding: 20px 0 15px
+	#intro
+		background: url('#{$img}inicio_title_bkg.jpg') no-repeat
+		background-size: cover
+		overflow: hidden
+		h1
+			em
+				font-size: 53px
+		p
+			font-size: 26px
+			color: #FFF
+			line-height: normal
+			margin: 40px auto
+			width: 73%
+			
+		h2
+			font-size: 16px
+			border-bottom: 1px solid #fff
+		a
+			background-color: #00cd88
+			display: inline-block
+			font-size: 18px
+			padding: 15px 60px
+			margin: 20px 0 0 0
+		.head_gradient
+			display: block
+			height: 1000px
+			margin: 0 0 -1000px 0
+			@include filter-gradient(rgba(1,196,139,.5), rgba(15, 91, 186, .5), horizontal)
+			@include background-image(linear-gradient(left, rgba(1,196,139,1), rgba(15, 91, 186, .2), rgba(15, 91, 186, 1)))
+		.top_arch
+			display: block
+			background: url('#{$img}home_top_arch_bkg.png') no-repeat
+			background-size: 100% 100%
+			height: 80px
+			margin: 0 auto
+			width: 100%
+		.bottom_arch
+			display: block
+			background: url('#{$img}home_bottom_arch_bkg.png') no-repeat
+			background-size: 100% 100%
+			margin: 40px auto 0
+			height: 105px
+			width: 100%
+
+	#listado_soluciones
+		border: none
+		padding-top: 0
+		h2
+			a
+				background-position: center 0
+			border-bottom: 0
+		#sondeos
+			h2
+				a
+					background-position: center -267px
+		
+		#asesoria
+			h2
+				a
+					background-position: center -548px
+
+		#hispanic
+			h2
+				a
+					background-position: center -815px
+
+		#logistica
+			h2
+				a
+					background-position: center -1134px
+
+		#productos
+			h2
+				a
+					background-position: center -1464px
+	h3
+		border-bottom: solid 1px #bbbdbf
+		font-size: 10px
+		text-transform: uppercase
+		font-weight: normal
+		text-align: center
+		margin: 0 0 30px
+		a
+			background-color: #FFF
+			color: #1a4996
+			padding: 10px 0
+			display: block
+			width: 250px
+			margin: 0 auto -15px
+			text-decoration: none
+	h4
+		font-weight: normal
+		font-size: 20px
+		text-transform: uppercase
+		color: #0f5bbb
+		margin: 30px 0
+		
+	#cobertura
+		background: #dbf5f5 url(#{$img}inicio_map.jpg) center top no-repeat
+		background-size: auto 100%
+		padding: 70px 0 170px
+		margin: 0 0 -140px
+		color: #606164
+			
+		ul
+			margin: 0
+		li
+			list-style: none
+			list-position: inside
+			color: #58595b
+			font-size: 12px
+
+		p
+			color: #231f20
+			font-size: 15px
+	#survey
+		height: 568px
+		position: relative
+		overflow: hidden
+		text-align: center
+		
+		
+		#survey_blue
+			background: #0f5bbb
+			width: 100%
+			height: 1000px
+			margin-bottom: -1000px
+			
+		.survey_blue_bkg
+			background: url('#{$img}survey_numbers_bkg.png') no-repeat center bottom
+			height: 36px
+			position: absolute
+			bottom: 0
+			width: 100%
+			z-index: 10
+			
+		#survey_green
+			background: #00cd88
+			height: 1000px
+			margin-bottom: -1000px
+			z-index: 2
+			position: relative
+			overflow: hidden
+			
+		.survey_green_bkg
+			background: url('#{$img}survey_numbers_bkg.png') no-repeat center top
+			position: absolute
+			height: 36px
+			
+		#survey_question, #survey_response
+			position: relative
+			z-index: 10
+			
+		#survey_question
+			margin: 20% auto
+			font-size: 24px
+			color: #FFF
+			text-transform: uppercase
+			display: inline-block
+			
+			ul
+				width: 100%
+				display: block
+				margin: -24px 0 0 0
+				list-style: none
+				
+			li
+				display: inline-block
+				
+			a
+				display: inline-block
+				height: 28px
+				width: 28px
+				@include border-radius(30px)
+				color: #0f5bbb
+				border: #0f5bbb solid 1px
+				margin: 0 250px 0 0
+				font-weight: normal
+				padding: 1px 1px 0 0
+				&:hover
+					color: #FFF
+					border-color: #FFF
+			b
+				@extend %gotham
+					
+			.right
+				color: #00cd88
+				border: #00cd88 solid 1px
+				margin: 0 0 0 0
+				padding: 1px 0 0 1px
+			.hide
+				display: none
+		#survey_response
+			line-height: normal
+			.pverde, .pazul
+				font-size: 13px
+
+			.response_b, .response_a
+				font-size: 24px
+				left: 0
+				margin: -28% 0 170px
+				padding: 0
+				position: absolute
+				top: 0
+				
+				a
+					display: block
+					padding: 10px 20px
+					font-size: 13px
+					color: #FFF
+					text-align: center
+					
+				.wrap
+					left: 50%
+					margin: 0 auto 0 -137px
+					position: absolute
+					width: 275px
+					
+			.response_b
+				background: transparent
+				left: auto
+				right: 0
+				text-align: left
+				color: #d0d2d3
+				.pverde
+					display: none
+				a
+					background: #00cd88
+					border-bottom: 3px solid #00cd88
+					margin: 10px 30px 0 0
+					border: 1px solid #0f5bbb
+					
+				.wrap	
+					margin: 0  0 0 -137px
+					
+			.response_a
+				text-align: right
+				color: #58595b				
+				.pazul
+					display: none
+				a
+					background: #0f5bbb
+					border-bottom: 3px solid #0f4288
+					margin: 10px 0 0 30px
+					border: 1px solid #00cd88
+			.percentage
+				font-size: 35px
+
+		
+	#listado_soluciones
+		span
+			display: block
+
+#twitter_feed
+	background: url(#{$img}twitter_big.jpg) 0 0 no-repeat
+	color: #808184
+	@extend %opensans
+	font-size: 18px
+	margin: 0 auto 20px
+	min-height: 130px
+	max-width: 620px
+	width: 90%
+	
+	p
+		margin: 0 0 0 60px
+
+	#twitter_follow
+		background: #daf5f5 url(#{$img}twitter_tiny.jpg) 10px 10px no-repeat
+		color: #808184
+		display: inline-block
+		font-size: 12px
+		margin: 20px 0 0 60px
+		padding: 4px 18px 4px 27px
+	
+		a
+			color: #808184
+		
+			&:hover
+				color: lighten( #808184, 10)

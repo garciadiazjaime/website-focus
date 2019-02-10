@@ -1,0 +1,116 @@
+{% extends 'layout/base.html' %}
+{% block site_wrapper %}{% load staticfiles %}{% autoescape off %}
+	<div id="intro" class="first_block">
+		<div id="solutions_slider" class="cbp-fwslider">
+			<ul>
+				<li>
+					<span class="head_gradient"></span>
+					<span class="top_arch"></span>
+					<div class="container">
+						<h1>{{data.0}}</h1>
+
+					</div>
+					<span class="bottom_arch"></span>
+				</li>	
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div id="solutions_block" class="row-fluid">
+			<div class="span7">
+				<p>{{data.1}}
+				</p>
+			</div>
+			<div class="span5">
+				<p class="green_title">{{data.2}}</p>
+			</div>
+		</div>
+		<div id="solutions_main_wrapp">
+			<div id="listado_soluciones" class="{% if product == '' %}active{% endif %}">
+				<div class="row-fluid">
+					<div class="span4">
+						<h2 class="shrink">{{data.3}}</h2>
+						<ul>
+							<li>{{data.4}}</li>
+							<li>{{data.5}}</li>
+							<li>{{data.6}}</li>
+							<li>{{data.7}}</li>
+							<li>{{data.8}}</li>
+							<li>{{data.9}}</li>
+							<li>{{data.10}}</li>
+							<li>{{data.11}}</li>
+							<li>{{data.12}}</li>
+						</ul>
+					</div>
+					<div id="sondeos" class="span4">
+						<h2 class="shrink">{{data.13}}</h2>
+						<ul>
+							<li>{{data.14}}</li>
+							<li>{{data.15}}</li>
+							<li>{{data.16}}</li>
+							<li>{{data.17}}</li>
+						</ul>
+					</div>
+					<div id="asesoria" class="span4">
+						<h2 class="shrink">{{data.18}}</h2>
+						<ul>
+							<li>{{data.19}}</li>
+							<li>{{data.20}}</li>
+							<li>{{data.21}}</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div id="hispanic" class="span4">
+						<h2 class="shrink">{{data.22}}</h2>
+						<p>{{data.23}}</p>
+					</div>
+					<div id="logistica" class="span4">
+						<h2 class="shrink">{{data.24}}</h2>
+						<p>{{data.25}}</p>
+					</div>
+					<div id="productos" class="span4">
+						<h2 class="shrink">{{data.26}}</h2>
+						<ul>
+							<li>{{data.27}}</li>
+							<li id="previa">{{data.28}}</li>
+							<li>{{data.29}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="bloque_servicios" class="estudios-de-mercado {% if product %}active{% endif %}">
+				<div class="row-fluid">
+					<div class="span12">
+						{{data.30}}
+						<span id="next_mobile">Next</span>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div id="menu_servicios" class="span3">
+
+						<h2 id="services_header">{{data.3}}</h2>
+						<ul id="services_list">
+							{% for row in list_products %}
+							<li class="{% if row.url == product %}active{% endif %}"><a href="/{{page.local}}/{{solution}}/{{row.url}}" title="{{solution}} - {{row}}">{{row}}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div id="services_content" class="offset1 span7 {{product}}">
+						<h2 id="service_title">{{desc_product.title}}</h2>
+						<p><strong id="service_subtitle">{{desc_product.subtitle}}</strong></p>
+						<div id="service_desc">
+							{{desc_product.text}}
+						</div>
+					</div>
+					<div class="span1">
+						<span id="next">Next</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script>solutions = {{solutions}}</script>
+{% endautoescape %}
+{% endblock %}
