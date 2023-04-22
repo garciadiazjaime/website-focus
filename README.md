@@ -42,7 +42,7 @@ wget --mirror --convert-links --adjust-extension --page-requisites
 wget -mkEpnp http://127.0.0.1:8000/
 
 ## Docker commands
-`docker build -t garciadiazjaime/website-focus .`
+`docker build -t garciadiazjaime/website-focus . --platform linux/amd64`
 `docker run -d -p 49169:8000 garciadiazjaime/website-focus`
 `docker push garciadiazjaime/website-focus`
 `docker pull garciadiazjaime/website-focus`

@@ -42,6 +42,8 @@ urlpatterns = patterns('',
 
     url(r'^get_last_tweets$', 'front.views.get_last_tweets', name='get_last_tweets'),
     url(r'^send_email$', 'front.views.send_email', {'lang': 1}, name='send_email'),
+
+    url(r'^.well-known/acme-challenge/FHlnHbcYEl1HkxuvQTV3Ednwq_59-OZ7dYzOeUlHuEk$', 'front.views.challenge', name='challenge    '),
 )
 
 urlpatterns += staticfiles_urlpatterns()

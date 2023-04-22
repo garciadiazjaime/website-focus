@@ -299,3 +299,6 @@ def survey_answer(request, lang=0):
 	else:
 		response = {'status': False}
 	return HttpResponse(json.dumps(response), content_type="application/json")
+
+def challenge(request):
+	return HttpResponse("FHlnHbcYEl1HkxuvQTV3Ednwq_59-OZ7dYzOeUlHuEk.LuQfyuS7LYdoK-grGkjE_j762MMlVb6AoJkx1D3FQvY")
